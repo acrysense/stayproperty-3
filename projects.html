@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>STAYPROPERTY - Новые проекты</title>
-	<meta property="og:title" content="STAYPROPERTY - Новые проекты">
+	<title>STAYPROPERTY - Аренда недвижимости в Москве</title>
+	<meta property="og:title" content="STAYPROPERTY - Аренда недвижимости в Москве">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="STAYPROPERTY - Новые проекты">
+	<meta property="og:site_name" content="STAYPROPERTY - Аренда недвижимости в Москве">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -30,7 +30,8 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<a href="index.html" class="header__logotype">
-						<img src="img/logotype.svg" width="176" height="28" alt="STAYPROPERTY">
+						<img src="img/logotype.svg" width="176" height="28" alt="STAYPROPERTY" class="default">
+						<img src="img/logotype-white.svg" width="176" height="28" alt="STAYPROPERTY" class="white">
 					</a>
 					<nav class="nav header__nav">
 						<ul class="nav__list">
@@ -56,19 +57,19 @@
 					</nav>
 					<div class="header__inner">
 						<div class="header__controls">
-							<a href="tel:905301782916" class="header__control" aria-label="Поиск">
+							<a href="#" class="header__control" aria-label="Поиск">
 								<svg>
 									<use xlink:href="img/sprite.svg#icon-search"></use>
 								</svg>
 							</a>
-							<a href="#" class="header__control" aria-label="Избранное">
+							<a href="favorites.html" class="header__control" aria-label="Избранное">
 								<svg>
 									<use xlink:href="img/sprite.svg#icon-like"></use>
 								</svg>
 							</a>
 						</div>
 						<a href="tel:74993508099" class="header__link">+7 499 350 8099</a>
-						<a href="#" class="header__btn btn btn--md">Заказать звонок</a>
+						<a href="#" class="header__btn btn btn--md modal-btn" data-id="modal-request-call">Заказать звонок</a>
 						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
 							<span class="hamburger__inner"></span>
 							<span class="hamburger__inner"></span>
@@ -90,10 +91,7 @@
 								<a href="index.html" class="breadcrumb__link">Главная</a>
 							</li>
 							<li class="breadcrumb__item">
-								<a href="#" class="breadcrumb__link">Покупка</a>
-							</li>
-							<li class="breadcrumb__item">
-								<a href="projects.html" class="breadcrumb__link">Новые проекты</a>
+								<a href="projects.html" class="breadcrumb__link">Аренда недвижимости в Москве</a>
 							</li>
 						</ol>
 					</nav>
@@ -104,121 +102,121 @@
 			<section class="projects page-section" id="projects">
 				<div class="container">
 					<div class="page-top">
-						<h1 class="page-top__heading">Новые проекты</h1>
+						<h1 class="page-top__heading">Аренда недвижимости в Москве</h1>
 					</div>
-					<div class="projects-filter projects__filter">
-						<div class="projects-filter__wrapper">
-							<div class="projects-filter__item">
-								<div class="default-select projects-filter__select">
-									<span class="default-select__label">Недвижимость</span>
-									<select class="js-select">
-										<option value="0">Готовое жилье</option>
-										<option value="1">Новые проекты</option>
-										<option value="2">Коммерческая недвижимость</option>
-										<option value="3">Земельные участки</option>
-									</select>
-								</div>
-							</div>
-							<div class="projects-filter__item">
-								<div class="default-select projects-filter__select">
-									<span class="default-select__label">Тип недвижимости</span>
-									<select class="js-select">
-										<option value="0">Неважно</option>
-										<option value="1">Апартаменты</option>
-										<option value="2">Пентхаусы</option>
-										<option value="3">Дуплексы</option>
-										<option value="4">Таунхаусы</option>
-										<option value="5">Виллы</option>
-										<option value="6">Апартаменты в отеле</option>
-									</select>
-								</div>
-							</div>
-							<div class="projects-filter__item">
-								<div class="default-select projects-filter__select">
-									<span class="default-select__label">Эмират</span>
-									<select class="js-select">
-										<option value="0">Дубай</option>
-										<option value="1">Абу-Даби</option>
-										<option value="2">Эль-Фуджайра</option>
-									</select>
-								</div>
-							</div>
-							<div class="projects-filter__item">
-								<div class="default-select projects-filter__select">
-									<span class="default-select__label">Район</span>
-									<select class="js-select">
-										<option value="0">Дубай</option>
-										<option value="1">Абу-Даби</option>
-										<option value="2">Эль-Фуджайра</option>
-									</select>
-								</div>
-							</div>
-							<div class="projects-filter__item">
-								<fieldset class="input-field projects-filter__input">
-									<div class="input-field__inner">
-										<button class="input-field__btn">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-search"></use>
-											</svg>
-										</button>
-										<input type="text" id="projects-search" class="input-field__input" placeholder="">
-										<label for="projects-search" class="input-field__label">Район или название ЖК</label>
-									</div>
-								</fieldset>
-							</div>
-						</div>
-						<div class="projects-filter__wrapper">
-							<div class="projects-filter__item">
-								<div class="default-select projects-filter__select">
-									<span class="default-select__label">Планировка</span>
-									<select class="js-select">
-										<option value="0">Неважно</option>
-										<option value="1">Компактная</option>
-										<option value="2">Расширенная</option>
-										<option value="3">Полная</option>
-									</select>
-								</div>
-							</div>
-							<div class="projects-filter__item projects-filter__item--mobile-fifty">
-								<fieldset class="input-field projects-filter__input">
-									<div class="input-field__inner">
-										<input type="number" id="projects-price-from" class="input-field__input" placeholder="" value="1000000">
-										<label for="projects-price-from" class="input-field__label">Цена от</label>
-									</div>
-								</fieldset>
-							</div>
-							<div class="projects-filter__item projects-filter__item--mobile-fifty">
-								<fieldset class="input-field projects-filter__input">
-									<div class="input-field__inner">
-										<input type="number" id="projects-price-to" class="input-field__input" placeholder="" value="100000000">
-										<label for="projects-price-to" class="input-field__label">Цена до</label>
-									</div>
-								</fieldset>
-							</div>
-							<div class="projects-filter__item">
-								<div class="default-select projects-filter__select">
-									<span class="default-select__label">Валюта</span>
-									<select class="js-select">
-										<option value="0">AED</option>
-										<option value="1">USD</option>
-										<option value="2">EUR</option>
-										<option value="3">RUB</option>
-									</select>
-								</div>
-								<button class="projects-filter__control filters-btn" data-id="filters-projects">
-									<span>Фильтры</span>
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-filter"></use>
-									</svg>
-								</button>
-							</div>
-							<div class="projects-filter__item">
-								<button class="projects-filter__btn btn btn--dark">Показать объекты</button>
-							</div>
-						</div>
-					</div>
+					<!-- <div class="projects-filter projects__filter">
+                        <div class="projects-filter__wrapper">
+                            <div class="projects-filter__item">
+                                <div class="default-select projects-filter__select">
+                                    <span class="default-select__label">Недвижимость</span>
+                                    <select class="js-select">
+                                        <option value="0">Готовое жилье</option>
+                                        <option value="1">Новые проекты</option>
+                                        <option value="2">Коммерческая недвижимость</option>
+                                        <option value="3">Земельные участки</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="projects-filter__item">
+                                <div class="default-select projects-filter__select">
+                                    <span class="default-select__label">Тип недвижимости</span>
+                                    <select class="js-select">
+                                        <option value="0">Неважно</option>
+                                        <option value="1">Апартаменты</option>
+                                        <option value="2">Пентхаусы</option>
+                                        <option value="3">Дуплексы</option>
+                                        <option value="4">Таунхаусы</option>
+                                        <option value="5">Виллы</option>
+                                        <option value="6">Апартаменты в отеле</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="projects-filter__item">
+                                <div class="default-select projects-filter__select">
+                                    <span class="default-select__label">Эмират</span>
+                                    <select class="js-select">
+                                        <option value="0">Дубай</option>
+                                        <option value="1">Абу-Даби</option>
+                                        <option value="2">Эль-Фуджайра</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="projects-filter__item">
+                                <div class="default-select projects-filter__select">
+                                    <span class="default-select__label">Район</span>
+                                    <select class="js-select">
+                                        <option value="0">Дубай</option>
+                                        <option value="1">Абу-Даби</option>
+                                        <option value="2">Эль-Фуджайра</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="projects-filter__item">
+                                <fieldset class="input-field projects-filter__input">
+                                    <div class="input-field__inner">
+                                        <button class="input-field__btn">
+                                            <svg>
+                                                <use xlink:href="img/sprite.svg#icon-search"></use>
+                                            </svg>
+                                        </button>
+                                        <input type="text" id="projects-search" class="input-field__input" placeholder="">
+                                        <label for="projects-search" class="input-field__label">Район или название ЖК</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="projects-filter__wrapper">
+                            <div class="projects-filter__item">
+                                <div class="default-select projects-filter__select">
+                                    <span class="default-select__label">Планировка</span>
+                                    <select class="js-select">
+                                        <option value="0">Неважно</option>
+                                        <option value="1">Компактная</option>
+                                        <option value="2">Расширенная</option>
+                                        <option value="3">Полная</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="projects-filter__item projects-filter__item--mobile-fifty">
+                                <fieldset class="input-field projects-filter__input">
+                                    <div class="input-field__inner">
+                                        <input type="number" id="projects-price-from" class="input-field__input" placeholder="" value="1000000">
+                                        <label for="projects-price-from" class="input-field__label">Цена от</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="projects-filter__item projects-filter__item--mobile-fifty">
+                                <fieldset class="input-field projects-filter__input">
+                                    <div class="input-field__inner">
+                                        <input type="number" id="projects-price-to" class="input-field__input" placeholder="" value="100000000">
+                                        <label for="projects-price-to" class="input-field__label">Цена до</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="projects-filter__item">
+                                <div class="default-select projects-filter__select">
+                                    <span class="default-select__label">Валюта</span>
+                                    <select class="js-select">
+                                        <option value="0">AED</option>
+                                        <option value="1">USD</option>
+                                        <option value="2">EUR</option>
+                                        <option value="3">RUB</option>
+                                    </select>
+                                </div>
+                                <button class="projects-filter__control filters-btn" data-id="filters-projects">
+                                    <span>Фильтры</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-filter"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="projects-filter__item">
+                                <button class="projects-filter__btn btn btn--dark">Показать объекты</button>
+                            </div>
+                        </div>
+                    </div> -->
 					<div class="projects__top">
-						<h4 class="projects__help">956 объектов в базе</h4>
+						<h4 class="projects__help">Найдено 156 объектов</h4>
 						<div class="projects__sort">
 							<span class="projects__help">Сортировать</span>
 							<div class="projects__select sort-select">
@@ -249,314 +247,544 @@
 						<div class="projects__holder is--active" data-view="1">
 							<div class="projects__wrapper">
 								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
 									<a href="#" class="projects-card__img">
 										<img src="img/projects-01.jpg" alt="Image">
-										<span class="projects-card__status">Mar Casa</span>
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
 									</a>
 									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
 										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
 										</div>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
-										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
 									</div>
 								</article>
 								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-									<a href="#" class="projects-card__img">
-										<img src="img/projects-02.jpg" alt="Image">
-										<span class="projects-card__status">Hadley Heights</span>
-									</a>
-									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
-										</div>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
-										</div>
-									</div>
-								</article>
-								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-									<a href="#" class="projects-card__img">
-										<img src="img/projects-03.jpg" alt="Image">
-										<span class="projects-card__status">The Quayside</span>
-									</a>
-									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
-										</div>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
-										</div>
-									</div>
-								</article>
-								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-									<a href="#" class="projects-card__img">
-										<img src="img/projects-03.jpg" alt="Image">
-										<span class="projects-card__status">The Quayside</span>
-									</a>
-									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
-										</div>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
-										</div>
-									</div>
-								</article>
-								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
 									<a href="#" class="projects-card__img">
 										<img src="img/projects-01.jpg" alt="Image">
-										<span class="projects-card__status">Mar Casa</span>
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
 									</a>
 									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
 										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
 										</div>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
-										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
 									</div>
 								</article>
 								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
 									<a href="#" class="projects-card__img">
-										<img src="img/projects-02.jpg" alt="Image">
-										<span class="projects-card__status">Hadley Heights</span>
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
 									</a>
 									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
 										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
 										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
 										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
 										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
 									</div>
 								</article>
 							</div>
-							<div class="banner-presale projects__banner">
-								<div class="banner-presale__wrapper">
-									<picture class="banner-presale__bg">
-										<source srcset="img/banner-presale.jpg" media="(min-width: 1024px)">
-										<img src="img/banner-presale-mob.jpg" alt="Image">
-									</picture>
-									<div class="banner-presale__wrapper-inner">
-										<div class="banner-presale__body">
-											<h2 class="banner-presale__title">Предпродажа</h2>
-											<p class="banner-presale__description">24 мая 2024 года старт продаж объектов в новом престижном ЖК на Business Bay. Успейте забронировать лучшую стоимость</p>
-											<a href="#" class="banner-presale__btn btn btn--white">Забронировать</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="projects__wrapper">
-								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-									<a href="#" class="projects-card__img">
-										<img src="img/projects-01.jpg" alt="Image">
-										<span class="projects-card__status">Mar Casa</span>
-									</a>
-									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
-										</div>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
-										</div>
-									</div>
-								</article>
-								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-									<a href="#" class="projects-card__img">
-										<img src="img/projects-02.jpg" alt="Image">
-										<span class="projects-card__status">Hadley Heights</span>
-									</a>
-									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
-										</div>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
-										</div>
-									</div>
-								</article>
-								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-									<a href="#" class="projects-card__img">
-										<img src="img/projects-03.jpg" alt="Image">
-										<span class="projects-card__status">The Quayside</span>
-									</a>
-									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
-										</div>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
-										</div>
-									</div>
-								</article>
-								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-									<a href="#" class="projects-card__img">
-										<img src="img/projects-03.jpg" alt="Image">
-										<span class="projects-card__status">The Quayside</span>
-									</a>
-									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
-										</div>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
-										</div>
-									</div>
-								</article>
-								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-									<a href="#" class="projects-card__img">
-										<img src="img/projects-01.jpg" alt="Image">
-										<span class="projects-card__status">Mar Casa</span>
-									</a>
-									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
-										</div>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
-										</div>
-									</div>
-								</article>
-								<article class="projects-card projects__item">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-									<a href="#" class="projects-card__img">
-										<img src="img/projects-02.jpg" alt="Image">
-										<span class="projects-card__status">Hadley Heights</span>
-									</a>
-									<div class="projects-card__body">
-										<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">от AED 10 500 000</span>
-										</div>
-										<div class="projects-card__inner">
-											<span class="projects-card__elem">4 спальни</span>
-											<span class="projects-card__elem">от 120 м²</span>
-										</div>
-									</div>
-								</article>
-							</div>
-							<a href="#" class="projects__more btn">Показать ещё 12 из 224</a>
+							<a href="#" class="projects__more btn btn--grey">Показать ещё объекты </a>
 							<div class="pagination projects__pagination">
 								<ul class="pagination__list">
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-prev-short"></use>
+											</svg>
+										</a>
+									</li>
 									<li class="pagination__item is--active">
 										<a href="#" class="pagination__btn">1</a>
 									</li>
@@ -567,31 +795,17 @@
 										<a href="#" class="pagination__btn">3</a>
 									</li>
 									<li class="pagination__item">
-										<a href="#" class="pagination__btn">4</a>
-									</li>
-									<li class="pagination__item is--mobile-hidden">
-										<a href="#" class="pagination__btn">5</a>
-									</li>
-									<li class="pagination__item is--mobile-hidden">
-										<a href="#" class="pagination__btn">6</a>
-									</li>
-									<li class="pagination__item is--mobile-hidden">
-										<a href="#" class="pagination__btn">7</a>
-									</li>
-									<li class="pagination__item is--mobile-hidden">
-										<a href="#" class="pagination__btn">8</a>
-									</li>
-									<li class="pagination__item is--mobile-hidden">
-										<a href="#" class="pagination__btn">9</a>
-									</li>
-									<li class="pagination__item is--mobile-hidden">
-										<a href="#" class="pagination__btn">10</a>
-									</li>
-									<li class="pagination__item">
 										<a href="#" class="pagination__btn" disabled>...</a>
 									</li>
+									<li class="pagination__item is--mobile-hidden">
+										<a href="#" class="pagination__btn">12</a>
+									</li>
 									<li class="pagination__item">
-										<a href="#" class="pagination__btn">37</a>
+										<a href="#" class="pagination__btn">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-next-short"></use>
+											</svg>
+										</a>
 									</li>
 								</ul>
 							</div>
@@ -602,33 +816,98 @@
 								<div class="projects__maps-wrap">
 									<button class="projects__maps-close">
 										<svg>
-											<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
 										</svg>
 									</button>
+									<span class="projects__maps-object">30 объектов</span>
 									<div class="projects__scroll" data-simplebar>
 										<div class="projects__maps-wrapper">
 											<article class="projects-card projects__item">
-												<button class="projects-card__like c-like">
-													<svg class="c-like__icon c-like__icon--default">
-														<use xlink:href="img/sprite.svg#icon-like"></use>
-													</svg>
-													<svg class="c-like__icon c-like__icon--filled">
-														<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-													</svg>
-												</button>
+												<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
 												<a href="#" class="projects-card__img">
-													<img src="img/projects-03.jpg" alt="Image">
-													<span class="projects-card__status">Mar Casa</span>
+													<img src="img/projects-01.jpg" alt="Image">
+													<button class="projects-card__like c-like">
+														<svg class="c-like__icon c-like__icon--default">
+															<use xlink:href="img/sprite.svg#icon-like"></use>
+														</svg>
+														<svg class="c-like__icon c-like__icon--filled">
+															<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+														</svg>
+													</button>
 												</a>
 												<div class="projects-card__body">
-													<a href="#" class="projects-card__title">Апартаменты с видом на море</a>
+													<p class="projects-card__description">Остоженка, ЖК Moments</p>
 													<div class="projects-card__inner">
-														<span class="projects-card__elem">от AED 10 500 000</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-size"></use>
+															</svg>
+															<span>95 м<sup>²</sup></span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+															</svg>
+															<span>2</span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+															</svg>
+															<span>1</span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-stairs"></use>
+															</svg>
+															<span>14 из 47</span>
+														</span>
 													</div>
+													<span class="projects-card__price">12 000 000 ₽</span>
+												</div>
+											</article>
+											<article class="projects-card projects__item">
+												<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+												<a href="#" class="projects-card__img">
+													<img src="img/projects-01.jpg" alt="Image">
+													<button class="projects-card__like c-like">
+														<svg class="c-like__icon c-like__icon--default">
+															<use xlink:href="img/sprite.svg#icon-like"></use>
+														</svg>
+														<svg class="c-like__icon c-like__icon--filled">
+															<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+														</svg>
+													</button>
+												</a>
+												<div class="projects-card__body">
+													<p class="projects-card__description">Остоженка, ЖК Moments</p>
 													<div class="projects-card__inner">
-														<span class="projects-card__elem">4 спальни</span>
-														<span class="projects-card__elem">от 120 м²</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-size"></use>
+															</svg>
+															<span>95 м<sup>²</sup></span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+															</svg>
+															<span>2</span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+															</svg>
+															<span>1</span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-stairs"></use>
+															</svg>
+															<span>14 из 47</span>
+														</span>
 													</div>
+													<span class="projects-card__price">12 000 000 ₽</span>
 												</div>
 											</article>
 										</div>
@@ -641,18 +920,36 @@
 				</div>
 			</section>
 			<!-- end of projects -->
-			<!-- seo -->
-			<section class="seo" id="seo">
+			<!-- feedback -->
+			<section class="feedback section-indent" id="feedback">
 				<div class="container">
-					<div class="seo__content">
-						<h2>Покупка новостройки в Дубае</h2>
-						<div class="seo__content-block">
-							<p>Дубай — город и эмират на побережье Персидского залива в Объединённых Арабских Эмиратах, который славится своими роскошными магазинами, ультрасовременной архитектурой, ресторанами и ночными клубами. Силуэт города формируют бесчисленные небоскрёбы, в том числе Бурдж-Халифа высотой 830 метров. У его основания расположен музыкальный фонтан «Дубай», подсвеченный прожекторами. На искусственном острове рядом с побережьем находится курорт Atlantis The Palm с аквапарком и парком морских животных.</p>
-						</div>
+					<div class="feedback__top">
+						<h2 class="feedback__heading">Узнайте первыми о новых проектах 2023 года</h2>
 					</div>
+					<form action="#" class="feedback-form feedback__form">
+						<div class="feedback-form__inner">
+							<fieldset class="input-field feedback-form__inner-item">
+								<div class="input-field__inner">
+									<input type="text" id="feedback-form-name" class="input-field__input" placeholder="Ваше имя">
+								</div>
+							</fieldset>
+							<fieldset class="input-field feedback-form__inner-item">
+								<div class="input-field__inner">
+									<input type="tel" id="feedback-form-phone" class="input-field__input" placeholder="Ваш телефон">
+								</div>
+							</fieldset>
+							<fieldset class="input-field feedback-form__inner-item">
+								<div class="input-field__inner">
+									<input type="email" id="feedback-form-email" class="input-field__input" placeholder="Ваш email">
+								</div>
+							</fieldset>
+							<button class="feedback-form__inner-item btn">Подписаться</button>
+						</div>
+						<p class="feedback-form__help">Оставляя заявку, вы соглашаетесь на обработку персональных данных</p>
+					</form>
 				</div>
 			</section>
-			<!-- end of seo -->
+			<!-- end of feedback -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
@@ -662,7 +959,7 @@
 					<div class="footer__wrapper">
 						<div class="footer__block">
 							<a href="index.html" class="footer__logotype">
-								<img src="img/logotype-white.svg" width="176" height="30" alt="STAYPROPERTY">
+								<img src="img/logotype-white-text.svg" width="176" height="30" alt="STAYPROPERTY">
 							</a>
 						</div>
 						<div class="footer__block">
@@ -759,117 +1056,30 @@
 	<!-- menu -->
 	<div class="menu" id="menu">
 		<div class="menu__wrap">
-			<div class="menu__top">
-				<div class="menu__selects">
-					<div class="menu__select sort-select">
-						<select class="js-select">
-							<option value="0">м²</option>
-							<option value="1">ft²</option>
-						</select>
-					</div>
-					<div class="menu__select sort-select">
-						<select class="js-select">
-							<option value="0">USD</option>
-							<option value="1">EUR</option>
-							<option value="2">AED</option>
-						</select>
-					</div>
-					<div class="menu__select sort-select">
-						<select class="js-select">
-							<option value="0">RU</option>
-							<option value="1">EN</option>
-							<option value="2">AE</option>
-						</select>
-					</div>
-				</div>
-				<button class="menu__close">
-					<svg>
-						<use xlink:href="img/sprite.svg#icon-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="menu__main">
-				<ul class="menu__list">
-					<li class="menu__item">
-						<a href="projects.html" class="menu__link">Новые проекты</a>
+			<nav class="nav menu__nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link">Покупка</a>
 					</li>
-					<li class="menu__item">
-						<a href="projects-2.html" class="menu__link">Готовое жилье</a>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Аренда</a>
 					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">Коммерческая</a>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Инвестиции</a>
 					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">Участки</a>
+					<li class="nav__item">
+						<a href="services.html" class="nav__link">Услуги</a>
 					</li>
-					<li class="menu__item">
-						<a href="pre-sale.html" class="menu__link">Пре-старт</a>
+					<li class="nav__item">
+						<a href="contacts.html" class="nav__link">Контакты</a>
 					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">Районы</a>
-					</li>
-					<li class="menu__item">
-						<a href="developers.html" class="menu__link">Застройщики</a>
-					</li>
-					<li class="menu__item">
-						<a href="catalogs.html" class="menu__link">Каталоги</a>
-					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">Аренда</a>
+					<li class="nav__item">
+						<a href="about.html" class="nav__link">О компании</a>
 					</li>
 				</ul>
-				<ul class="menu__list menu__list--sm">
-					<li class="menu__item">
-						<a href="services.html" class="menu__link">Услуги</a>
-					</li>
-					<li class="menu__item">
-						<a href="news.html" class="menu__link">Новости</a>
-					</li>
-					<li class="menu__item">
-						<a href="about.html" class="menu__link">О компании</a>
-					</li>
-					<li class="menu__item">
-						<a href="contacts.html" class="menu__link">Контакты</a>
-					</li>
-				</ul>
-			</div>
+			</nav>
 			<div class="menu__bottom">
-				<a href="tel:905301782916" class="menu__link">+90 530 178 2916</a>
-				<a href="mailto:office@stayproperty.com" class="menu__link">office@stayproperty.com</a>
-				<div class="menu__controls">
-					<a href="#" class="menu__control">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-phone"></use>
-						</svg>
-					</a>
-					<a href="#" class="menu__control">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-email"></use>
-						</svg>
-					</a>
-					<a href="#" class="menu__control">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-telegram"></use>
-						</svg>
-					</a>
-					<a href="#" class="menu__control">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
-						</svg>
-					</a>
-				</div>
-				<a href="tel:905301782916" class="menu__btn btn">Заказать звонок</a>
-				<div class="c-socnav menu__socnav">
-					<ul class="c-socnav__list">
-						<li class="c-socnav__item">
-							<a href="#" class="c-socnav__link">
-								<svg class="c-socnav__icon">
-									<use xlink:href="img/sprite.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
+				<a href="tel:74993508099" class="menu__btn btn modal-btn" data-id="modal-request-call">Заказать звонок</a>
 			</div>
 		</div>
 	</div>
@@ -2520,33 +2730,36 @@
 					</svg>
 				</button>
 				<div class="modal__top">
-					<h3 class="modal__heading">Заказать звонок</h3>
-					<p class="modal__description">Оставьте ваши данные, мы перезвоним в ближайшее время</p>
+					<h3 class="modal__heading">Свяжемся с вами</h3>
+					<p class="modal__description">Заполните форму, и наш агент свяжется с вами в ближайшее время</p>
 				</div>
 				<form action="#" class="modal-form modal__form">
 					<div class="modal-form__inputs">
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-request-call-name" class="input-field__input" placeholder="">
-								<label for="modal-request-call-name" class="input-field__label">Ваше имя</label>
+								<input type="text" id="modal-request-call-name" class="input-field__input" placeholder="Ваше имя">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-request-call-phone" class="input-field__input" placeholder="">
-								<label for="modal-request-call-name" class="input-field__label">Ваш телефон</label>
+								<input type="text" id="modal-request-call-phone" class="input-field__input" placeholder="Ваш телефон">
+							</div>
+						</fieldset>
+						<fieldset class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="text" id="modal-request-call-time" class="input-field__input" placeholder="Удобное время">
 							</div>
 						</fieldset>
 					</div>
 					<div class="modal-form__bottom">
-						<button class="modal-form__btn btn btn--dark">Отправить</button>
-						<p class="modal-form__help">Нажимая, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a></p>
+						<button class="modal-form__btn btn">Отправить</button>
+						<p class="modal-form__help">Оставляя заявку, вы соглашаетесь на обработку персональных данных</a></p>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	<div class="modal" id="modal-pre-order">
+	<div class="modal" id="modal-view">
 		<div class="modal__wrap">
 			<div class="modal__wrapper">
 				<button class="modal__close-btn modal__close">
@@ -2555,39 +2768,36 @@
 					</svg>
 				</button>
 				<div class="modal__top">
-					<h3 class="modal__heading">Оформить предзаказ</h3>
-					<p class="modal__description">Заполните форму и наш агент свяжется с вами в ближайшее время</p>
+					<h3 class="modal__heading">Запланировать просмотр</h3>
+					<p class="modal__description">Заполните форму, и наш агент свяжется с вами в ближайшее время</p>
 				</div>
 				<form action="#" class="modal-form modal__form">
 					<div class="modal-form__inputs">
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-pre-order-name" class="input-field__input" placeholder="">
-								<label for="modal-pre-order-name" class="input-field__label">Ваше имя</label>
+								<input type="text" id="modal-request-call-name" class="input-field__input" placeholder="Ваше имя">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-pre-order-phone" class="input-field__input" placeholder="">
-								<label for="modal-pre-order-phone" class="input-field__label">Ваш телефон</label>
+								<input type="text" id="modal-request-call-phone" class="input-field__input" placeholder="Ваш телефон">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-pre-order-email" class="input-field__input" placeholder="">
-								<label for="modal-pre-order-email" class="input-field__label">Ваш e-mail</label>
+								<input type="text" id="modal-request-call-time" class="input-field__input" placeholder="Удобное время">
 							</div>
 						</fieldset>
 					</div>
 					<div class="modal-form__bottom">
-						<button class="modal-form__btn btn btn--dark">Отправить</button>
-						<p class="modal-form__help">Нажимая, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a></p>
+						<button class="modal-form__btn btn">Отправить</button>
+						<p class="modal-form__help">Оставляя заявку, вы соглашаетесь на обработку персональных данных</a></p>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	<div class="modal" id="modal-consultation">
+	<div class="modal" id="modal-presentation">
 		<div class="modal__wrap">
 			<div class="modal__wrapper">
 				<button class="modal__close-btn modal__close">
@@ -2596,33 +2806,36 @@
 					</svg>
 				</button>
 				<div class="modal__top">
-					<h3 class="modal__heading">Получить консультацию</h3>
-					<p class="modal__description">Оставьте ваши данные, мы перезвоним в ближайшее время</p>
+					<h3 class="modal__heading">Скачать презентацию объекта</h3>
+					<p class="modal__description">Без подписки и спама</p>
 				</div>
 				<form action="#" class="modal-form modal__form">
 					<div class="modal-form__inputs">
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-consultation-name" class="input-field__input" placeholder="">
-								<label for="modal-consultation-name" class="input-field__label">Ваше имя</label>
+								<input type="text" id="modal-request-call-name" class="input-field__input" placeholder="Ваше имя">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-consultation-phone" class="input-field__input" placeholder="">
-								<label for="modal-consultation-phone" class="input-field__label">Ваш телефон</label>
+								<input type="text" id="modal-request-call-phone" class="input-field__input" placeholder="Ваш телефон">
+							</div>
+						</fieldset>
+						<fieldset class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="text" id="modal-request-call-time" class="input-field__input" placeholder="Удобное время">
 							</div>
 						</fieldset>
 					</div>
 					<div class="modal-form__bottom">
-						<button class="modal-form__btn btn btn--dark">Отправить</button>
-						<p class="modal-form__help">Нажимая, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a></p>
+						<button class="modal-form__btn btn">Отправить</button>
+						<p class="modal-form__help">Оставляя заявку, вы соглашаетесь на обработку персональных данных</a></p>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	<div class="modal" id="modal-download-catalog">
+	<div class="modal" id="modal-presentation">
 		<div class="modal__wrap">
 			<div class="modal__wrapper">
 				<button class="modal__close-btn modal__close">
@@ -2631,75 +2844,31 @@
 					</svg>
 				</button>
 				<div class="modal__top">
-					<h3 class="modal__heading">Скачать каталог</h3>
-					<h4 class="modal__subtitle">«Лучшие предложения Emaar»</h4>
-					<p class="modal__description">Оставьте ваши данные, мы перезвоним в ближайшее время</p>
+					<h3 class="modal__heading">Станьте частью нашей команды</h3>
+					<p class="modal__description">Заполните форму, и наш агент свяжется с вами в ближайшее время</p>
 				</div>
 				<form action="#" class="modal-form modal__form">
 					<div class="modal-form__inputs">
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-download-catalog-name" class="input-field__input" placeholder="">
-								<label for="modal-download-catalog-name" class="input-field__label">Ваше имя</label>
+								<input type="text" id="modal-request-call-name" class="input-field__input" placeholder="Ваше имя">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-download-catalog-phone" class="input-field__input" placeholder="">
-								<label for="modal-download-catalog-phone" class="input-field__label">Ваш телефон</label>
+								<input type="text" id="modal-request-call-phone" class="input-field__input" placeholder="Ваш телефон">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-download-catalog-email" class="input-field__input" placeholder="">
-								<label for="modal-download-catalog-email" class="input-field__label">Ваш e-mail</label>
+								<input type="text" id="modal-request-call-time" class="input-field__input" placeholder="Удобное время">
 							</div>
 						</fieldset>
 					</div>
 					<div class="modal-form__bottom">
-						<button class="modal-form__btn btn btn--dark">Скачать презентацию</button>
-						<p class="modal-form__help">Нажимая, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a></p>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<div class="modal" id="modal-rental">
-		<div class="modal__wrap">
-			<div class="modal__wrapper">
-				<button class="modal__close-btn modal__close">
-					<svg>
-						<use xlink:href="img/sprite.svg#icon-close"></use>
-					</svg>
-				</button>
-				<div class="modal__top">
-					<h3 class="modal__heading">Аренда жилья</h3>
-					<p class="modal__description">Оставьте ваши данные, мы перезвоним в ближайшее время</p>
-				</div>
-				<form action="#" class="modal-form modal__form">
-					<div class="modal-form__inputs">
-						<fieldset class="input-field modal-form__input">
-							<div class="input-field__inner">
-								<input type="text" id="modal-rental-name" class="input-field__input" placeholder="">
-								<label for="modal-rental-name" class="input-field__label">Ваше имя</label>
-							</div>
-						</fieldset>
-						<fieldset class="input-field modal-form__input">
-							<div class="input-field__inner">
-								<input type="text" id="modal-rental-phone" class="input-field__input" placeholder="">
-								<label for="modal-rental-phone" class="input-field__label">Ваш телефон</label>
-							</div>
-						</fieldset>
-						<fieldset class="input-field modal-form__input">
-							<div class="input-field__inner">
-								<input type="text" id="modal-rental-text" class="input-field__input" placeholder="">
-								<label for="modal-rental-text" class="input-field__label">Опишите свой запрос...</label>
-							</div>
-						</fieldset>
-					</div>
-					<div class="modal-form__bottom">
-						<button class="modal-form__btn btn btn--dark">Отправить</button>
-						<p class="modal-form__help">Нажимая, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a></p>
+						<button class="modal-form__btn btn btn--border">Прикрепить резюме</button>
+						<button class="modal-form__btn btn">Отправить</button>
+						<p class="modal-form__help">Оставляя заявку, вы соглашаетесь на обработку персональных данных</a></p>
 					</div>
 				</form>
 			</div>

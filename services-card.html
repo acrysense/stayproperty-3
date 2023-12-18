@@ -30,7 +30,8 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<a href="index.html" class="header__logotype">
-						<img src="img/logotype.svg" width="176" height="28" alt="STAYPROPERTY">
+						<img src="img/logotype.svg" width="176" height="28" alt="STAYPROPERTY" class="default">
+						<img src="img/logotype-white.svg" width="176" height="28" alt="STAYPROPERTY" class="white">
 					</a>
 					<nav class="nav header__nav">
 						<ul class="nav__list">
@@ -56,19 +57,19 @@
 					</nav>
 					<div class="header__inner">
 						<div class="header__controls">
-							<a href="tel:905301782916" class="header__control" aria-label="Поиск">
+							<a href="#" class="header__control" aria-label="Поиск">
 								<svg>
 									<use xlink:href="img/sprite.svg#icon-search"></use>
 								</svg>
 							</a>
-							<a href="#" class="header__control" aria-label="Избранное">
+							<a href="favorites.html" class="header__control" aria-label="Избранное">
 								<svg>
 									<use xlink:href="img/sprite.svg#icon-like"></use>
 								</svg>
 							</a>
 						</div>
 						<a href="tel:74993508099" class="header__link">+7 499 350 8099</a>
-						<a href="#" class="header__btn btn btn--md">Заказать звонок</a>
+						<a href="#" class="header__btn btn btn--md modal-btn" data-id="modal-request-call">Заказать звонок</a>
 						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
 							<span class="hamburger__inner"></span>
 							<span class="hamburger__inner"></span>
@@ -236,7 +237,7 @@
 					<div class="footer__wrapper">
 						<div class="footer__block">
 							<a href="index.html" class="footer__logotype">
-								<img src="img/logotype-white.svg" width="176" height="30" alt="STAYPROPERTY">
+								<img src="img/logotype-white-text.svg" width="176" height="30" alt="STAYPROPERTY">
 							</a>
 						</div>
 						<div class="footer__block">
@@ -333,117 +334,30 @@
 	<!-- menu -->
 	<div class="menu" id="menu">
 		<div class="menu__wrap">
-			<div class="menu__top">
-				<div class="menu__selects">
-					<div class="menu__select sort-select">
-						<select class="js-select">
-							<option value="0">м²</option>
-							<option value="1">ft²</option>
-						</select>
-					</div>
-					<div class="menu__select sort-select">
-						<select class="js-select">
-							<option value="0">USD</option>
-							<option value="1">EUR</option>
-							<option value="2">AED</option>
-						</select>
-					</div>
-					<div class="menu__select sort-select">
-						<select class="js-select">
-							<option value="0">RU</option>
-							<option value="1">EN</option>
-							<option value="2">AE</option>
-						</select>
-					</div>
-				</div>
-				<button class="menu__close">
-					<svg>
-						<use xlink:href="img/sprite.svg#icon-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="menu__main">
-				<ul class="menu__list">
-					<li class="menu__item">
-						<a href="projects.html" class="menu__link">Новые проекты</a>
+			<nav class="nav menu__nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link">Покупка</a>
 					</li>
-					<li class="menu__item">
-						<a href="projects-2.html" class="menu__link">Готовое жилье</a>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Аренда</a>
 					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">Коммерческая</a>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Инвестиции</a>
 					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">Участки</a>
+					<li class="nav__item">
+						<a href="services.html" class="nav__link">Услуги</a>
 					</li>
-					<li class="menu__item">
-						<a href="pre-sale.html" class="menu__link">Пре-старт</a>
+					<li class="nav__item">
+						<a href="contacts.html" class="nav__link">Контакты</a>
 					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">Районы</a>
-					</li>
-					<li class="menu__item">
-						<a href="developers.html" class="menu__link">Застройщики</a>
-					</li>
-					<li class="menu__item">
-						<a href="catalogs.html" class="menu__link">Каталоги</a>
-					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">Аренда</a>
+					<li class="nav__item">
+						<a href="about.html" class="nav__link">О компании</a>
 					</li>
 				</ul>
-				<ul class="menu__list menu__list--sm">
-					<li class="menu__item">
-						<a href="services.html" class="menu__link">Услуги</a>
-					</li>
-					<li class="menu__item">
-						<a href="news.html" class="menu__link">Новости</a>
-					</li>
-					<li class="menu__item">
-						<a href="about.html" class="menu__link">О компании</a>
-					</li>
-					<li class="menu__item">
-						<a href="contacts.html" class="menu__link">Контакты</a>
-					</li>
-				</ul>
-			</div>
+			</nav>
 			<div class="menu__bottom">
-				<a href="tel:905301782916" class="menu__link">+90 530 178 2916</a>
-				<a href="mailto:office@stayproperty.com" class="menu__link">office@stayproperty.com</a>
-				<div class="menu__controls">
-					<a href="#" class="menu__control">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-phone"></use>
-						</svg>
-					</a>
-					<a href="#" class="menu__control">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-email"></use>
-						</svg>
-					</a>
-					<a href="#" class="menu__control">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-telegram"></use>
-						</svg>
-					</a>
-					<a href="#" class="menu__control">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
-						</svg>
-					</a>
-				</div>
-				<a href="tel:905301782916" class="menu__btn btn">Заказать звонок</a>
-				<div class="c-socnav menu__socnav">
-					<ul class="c-socnav__list">
-						<li class="c-socnav__item">
-							<a href="#" class="c-socnav__link">
-								<svg class="c-socnav__icon">
-									<use xlink:href="img/sprite.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
+				<a href="tel:74993508099" class="menu__btn btn modal-btn" data-id="modal-request-call">Заказать звонок</a>
 			</div>
 		</div>
 	</div>
@@ -458,33 +372,36 @@
 					</svg>
 				</button>
 				<div class="modal__top">
-					<h3 class="modal__heading">Заказать звонок</h3>
-					<p class="modal__description">Оставьте ваши данные, мы перезвоним в ближайшее время</p>
+					<h3 class="modal__heading">Свяжемся с вами</h3>
+					<p class="modal__description">Заполните форму, и наш агент свяжется с вами в ближайшее время</p>
 				</div>
 				<form action="#" class="modal-form modal__form">
 					<div class="modal-form__inputs">
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-request-call-name" class="input-field__input" placeholder="">
-								<label for="modal-request-call-name" class="input-field__label">Ваше имя</label>
+								<input type="text" id="modal-request-call-name" class="input-field__input" placeholder="Ваше имя">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-request-call-phone" class="input-field__input" placeholder="">
-								<label for="modal-request-call-name" class="input-field__label">Ваш телефон</label>
+								<input type="text" id="modal-request-call-phone" class="input-field__input" placeholder="Ваш телефон">
+							</div>
+						</fieldset>
+						<fieldset class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="text" id="modal-request-call-time" class="input-field__input" placeholder="Удобное время">
 							</div>
 						</fieldset>
 					</div>
 					<div class="modal-form__bottom">
-						<button class="modal-form__btn btn btn--dark">Отправить</button>
-						<p class="modal-form__help">Нажимая, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a></p>
+						<button class="modal-form__btn btn">Отправить</button>
+						<p class="modal-form__help">Оставляя заявку, вы соглашаетесь на обработку персональных данных</a></p>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	<div class="modal" id="modal-pre-order">
+	<div class="modal" id="modal-view">
 		<div class="modal__wrap">
 			<div class="modal__wrapper">
 				<button class="modal__close-btn modal__close">
@@ -493,39 +410,36 @@
 					</svg>
 				</button>
 				<div class="modal__top">
-					<h3 class="modal__heading">Оформить предзаказ</h3>
-					<p class="modal__description">Заполните форму и наш агент свяжется с вами в ближайшее время</p>
+					<h3 class="modal__heading">Запланировать просмотр</h3>
+					<p class="modal__description">Заполните форму, и наш агент свяжется с вами в ближайшее время</p>
 				</div>
 				<form action="#" class="modal-form modal__form">
 					<div class="modal-form__inputs">
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-pre-order-name" class="input-field__input" placeholder="">
-								<label for="modal-pre-order-name" class="input-field__label">Ваше имя</label>
+								<input type="text" id="modal-request-call-name" class="input-field__input" placeholder="Ваше имя">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-pre-order-phone" class="input-field__input" placeholder="">
-								<label for="modal-pre-order-phone" class="input-field__label">Ваш телефон</label>
+								<input type="text" id="modal-request-call-phone" class="input-field__input" placeholder="Ваш телефон">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-pre-order-email" class="input-field__input" placeholder="">
-								<label for="modal-pre-order-email" class="input-field__label">Ваш e-mail</label>
+								<input type="text" id="modal-request-call-time" class="input-field__input" placeholder="Удобное время">
 							</div>
 						</fieldset>
 					</div>
 					<div class="modal-form__bottom">
-						<button class="modal-form__btn btn btn--dark">Отправить</button>
-						<p class="modal-form__help">Нажимая, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a></p>
+						<button class="modal-form__btn btn">Отправить</button>
+						<p class="modal-form__help">Оставляя заявку, вы соглашаетесь на обработку персональных данных</a></p>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	<div class="modal" id="modal-consultation">
+	<div class="modal" id="modal-presentation">
 		<div class="modal__wrap">
 			<div class="modal__wrapper">
 				<button class="modal__close-btn modal__close">
@@ -534,33 +448,36 @@
 					</svg>
 				</button>
 				<div class="modal__top">
-					<h3 class="modal__heading">Получить консультацию</h3>
-					<p class="modal__description">Оставьте ваши данные, мы перезвоним в ближайшее время</p>
+					<h3 class="modal__heading">Скачать презентацию объекта</h3>
+					<p class="modal__description">Без подписки и спама</p>
 				</div>
 				<form action="#" class="modal-form modal__form">
 					<div class="modal-form__inputs">
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-consultation-name" class="input-field__input" placeholder="">
-								<label for="modal-consultation-name" class="input-field__label">Ваше имя</label>
+								<input type="text" id="modal-request-call-name" class="input-field__input" placeholder="Ваше имя">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-consultation-phone" class="input-field__input" placeholder="">
-								<label for="modal-consultation-phone" class="input-field__label">Ваш телефон</label>
+								<input type="text" id="modal-request-call-phone" class="input-field__input" placeholder="Ваш телефон">
+							</div>
+						</fieldset>
+						<fieldset class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="text" id="modal-request-call-time" class="input-field__input" placeholder="Удобное время">
 							</div>
 						</fieldset>
 					</div>
 					<div class="modal-form__bottom">
-						<button class="modal-form__btn btn btn--dark">Отправить</button>
-						<p class="modal-form__help">Нажимая, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a></p>
+						<button class="modal-form__btn btn">Отправить</button>
+						<p class="modal-form__help">Оставляя заявку, вы соглашаетесь на обработку персональных данных</a></p>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	<div class="modal" id="modal-download-catalog">
+	<div class="modal" id="modal-presentation">
 		<div class="modal__wrap">
 			<div class="modal__wrapper">
 				<button class="modal__close-btn modal__close">
@@ -569,75 +486,31 @@
 					</svg>
 				</button>
 				<div class="modal__top">
-					<h3 class="modal__heading">Скачать каталог</h3>
-					<h4 class="modal__subtitle">«Лучшие предложения Emaar»</h4>
-					<p class="modal__description">Оставьте ваши данные, мы перезвоним в ближайшее время</p>
+					<h3 class="modal__heading">Станьте частью нашей команды</h3>
+					<p class="modal__description">Заполните форму, и наш агент свяжется с вами в ближайшее время</p>
 				</div>
 				<form action="#" class="modal-form modal__form">
 					<div class="modal-form__inputs">
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-download-catalog-name" class="input-field__input" placeholder="">
-								<label for="modal-download-catalog-name" class="input-field__label">Ваше имя</label>
+								<input type="text" id="modal-request-call-name" class="input-field__input" placeholder="Ваше имя">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-download-catalog-phone" class="input-field__input" placeholder="">
-								<label for="modal-download-catalog-phone" class="input-field__label">Ваш телефон</label>
+								<input type="text" id="modal-request-call-phone" class="input-field__input" placeholder="Ваш телефон">
 							</div>
 						</fieldset>
 						<fieldset class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" id="modal-download-catalog-email" class="input-field__input" placeholder="">
-								<label for="modal-download-catalog-email" class="input-field__label">Ваш e-mail</label>
+								<input type="text" id="modal-request-call-time" class="input-field__input" placeholder="Удобное время">
 							</div>
 						</fieldset>
 					</div>
 					<div class="modal-form__bottom">
-						<button class="modal-form__btn btn btn--dark">Скачать презентацию</button>
-						<p class="modal-form__help">Нажимая, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a></p>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<div class="modal" id="modal-rental">
-		<div class="modal__wrap">
-			<div class="modal__wrapper">
-				<button class="modal__close-btn modal__close">
-					<svg>
-						<use xlink:href="img/sprite.svg#icon-close"></use>
-					</svg>
-				</button>
-				<div class="modal__top">
-					<h3 class="modal__heading">Аренда жилья</h3>
-					<p class="modal__description">Оставьте ваши данные, мы перезвоним в ближайшее время</p>
-				</div>
-				<form action="#" class="modal-form modal__form">
-					<div class="modal-form__inputs">
-						<fieldset class="input-field modal-form__input">
-							<div class="input-field__inner">
-								<input type="text" id="modal-rental-name" class="input-field__input" placeholder="">
-								<label for="modal-rental-name" class="input-field__label">Ваше имя</label>
-							</div>
-						</fieldset>
-						<fieldset class="input-field modal-form__input">
-							<div class="input-field__inner">
-								<input type="text" id="modal-rental-phone" class="input-field__input" placeholder="">
-								<label for="modal-rental-phone" class="input-field__label">Ваш телефон</label>
-							</div>
-						</fieldset>
-						<fieldset class="input-field modal-form__input">
-							<div class="input-field__inner">
-								<input type="text" id="modal-rental-text" class="input-field__input" placeholder="">
-								<label for="modal-rental-text" class="input-field__label">Опишите свой запрос...</label>
-							</div>
-						</fieldset>
-					</div>
-					<div class="modal-form__bottom">
-						<button class="modal-form__btn btn btn--dark">Отправить</button>
-						<p class="modal-form__help">Нажимая, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a></p>
+						<button class="modal-form__btn btn btn--border">Прикрепить резюме</button>
+						<button class="modal-form__btn btn">Отправить</button>
+						<p class="modal-form__help">Оставляя заявку, вы соглашаетесь на обработку персональных данных</a></p>
 					</div>
 				</form>
 			</div>
