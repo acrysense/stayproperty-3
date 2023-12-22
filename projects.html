@@ -104,117 +104,113 @@
 					<div class="page-top">
 						<h1 class="page-top__heading">Аренда недвижимости в Москве</h1>
 					</div>
-					<!-- <div class="projects-filter projects__filter">
-                        <div class="projects-filter__wrapper">
-                            <div class="projects-filter__item">
-                                <div class="default-select projects-filter__select">
-                                    <span class="default-select__label">Недвижимость</span>
-                                    <select class="js-select">
-                                        <option value="0">Готовое жилье</option>
-                                        <option value="1">Новые проекты</option>
-                                        <option value="2">Коммерческая недвижимость</option>
-                                        <option value="3">Земельные участки</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="projects-filter__item">
-                                <div class="default-select projects-filter__select">
-                                    <span class="default-select__label">Тип недвижимости</span>
-                                    <select class="js-select">
-                                        <option value="0">Неважно</option>
-                                        <option value="1">Апартаменты</option>
-                                        <option value="2">Пентхаусы</option>
-                                        <option value="3">Дуплексы</option>
-                                        <option value="4">Таунхаусы</option>
-                                        <option value="5">Виллы</option>
-                                        <option value="6">Апартаменты в отеле</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="projects-filter__item">
-                                <div class="default-select projects-filter__select">
-                                    <span class="default-select__label">Эмират</span>
-                                    <select class="js-select">
-                                        <option value="0">Дубай</option>
-                                        <option value="1">Абу-Даби</option>
-                                        <option value="2">Эль-Фуджайра</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="projects-filter__item">
-                                <div class="default-select projects-filter__select">
-                                    <span class="default-select__label">Район</span>
-                                    <select class="js-select">
-                                        <option value="0">Дубай</option>
-                                        <option value="1">Абу-Даби</option>
-                                        <option value="2">Эль-Фуджайра</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="projects-filter__item">
-                                <fieldset class="input-field projects-filter__input">
-                                    <div class="input-field__inner">
-                                        <button class="input-field__btn">
-                                            <svg>
-                                                <use xlink:href="img/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                        <input type="text" id="projects-search" class="input-field__input" placeholder="">
-                                        <label for="projects-search" class="input-field__label">Район или название ЖК</label>
-                                    </div>
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="projects-filter__wrapper">
-                            <div class="projects-filter__item">
-                                <div class="default-select projects-filter__select">
-                                    <span class="default-select__label">Планировка</span>
-                                    <select class="js-select">
-                                        <option value="0">Неважно</option>
-                                        <option value="1">Компактная</option>
-                                        <option value="2">Расширенная</option>
-                                        <option value="3">Полная</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="projects-filter__item projects-filter__item--mobile-fifty">
-                                <fieldset class="input-field projects-filter__input">
-                                    <div class="input-field__inner">
-                                        <input type="number" id="projects-price-from" class="input-field__input" placeholder="" value="1000000">
-                                        <label for="projects-price-from" class="input-field__label">Цена от</label>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="projects-filter__item projects-filter__item--mobile-fifty">
-                                <fieldset class="input-field projects-filter__input">
-                                    <div class="input-field__inner">
-                                        <input type="number" id="projects-price-to" class="input-field__input" placeholder="" value="100000000">
-                                        <label for="projects-price-to" class="input-field__label">Цена до</label>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="projects-filter__item">
-                                <div class="default-select projects-filter__select">
-                                    <span class="default-select__label">Валюта</span>
-                                    <select class="js-select">
-                                        <option value="0">AED</option>
-                                        <option value="1">USD</option>
-                                        <option value="2">EUR</option>
-                                        <option value="3">RUB</option>
-                                    </select>
-                                </div>
-                                <button class="projects-filter__control filters-btn" data-id="filters-projects">
-                                    <span>Фильтры</span>
-                                    <svg>
-                                        <use xlink:href="img/sprite.svg#icon-filter"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="projects-filter__item">
-                                <button class="projects-filter__btn btn btn--dark">Показать объекты</button>
-                            </div>
-                        </div>
-                    </div> -->
+					<div class="projects-tabs">
+						<div class="default-select projects-tabs__select">
+							<select class="js-select">
+								<option value="0">Жилая недвижимость</option>
+								<option value="1">Коммерческая</option>
+								<option value="2">Земельные участки</option>
+							</select>
+						</div>
+						<ul class="projects-tabs__list">
+							<li class="projects-tabs__item is--active">
+								<button class="projects-tabs__tab">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-residential"></use>
+									</svg>
+									<span>Жилая недвижимость</span>
+								</button>
+							</li>
+							<li class="projects-tabs__item">
+								<button class="projects-tabs__tab">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-commercial"></use>
+									</svg>
+									<span>Коммерческая</span>
+								</button>
+							</li>
+							<li class="projects-tabs__item">
+								<button class="projects-tabs__tab">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-forest"></use>
+									</svg>
+									<span>Земельные участки</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div class="projects-filter projects__filter">
+						<div class="projects-filter__wrapper">
+							<div class="projects-filter__item">
+								<div class="default-select projects-filter__select">
+									<select class="js-select">
+										<option value="">Аренда</option>
+										<option value="0">Неважно</option>
+										<option value="1">Компактная</option>
+										<option value="2">Расширенная</option>
+										<option value="3">Полная</option>
+									</select>
+								</div>
+							</div>
+							<div class="projects-filter__item">
+								<div class="default-select projects-filter__select">
+									<select class="js-select">
+										<option value="">Все типы недвижимости</option>
+										<option value="0">Жилая недвижимость</option>
+										<option value="1">Коммерческая</option>
+										<option value="2">Земельные участки</option>
+									</select>
+								</div>
+							</div>
+							<div class="projects-filter__item">
+								<div class="default-select projects-filter__select">
+									<span class="default-select__label"></span>
+									<select class="js-select">
+										<option placeholder="true">Все районы</option>
+										<option value="0">Неважно</option>
+										<option value="1">Компактная</option>
+										<option value="2">Расширенная</option>
+										<option value="3">Полная</option>
+									</select>
+								</div>
+							</div>
+							<div class="projects-filter__item">
+								<fieldset class="input-field projects-filter__input">
+									<div class="input-field__wrapper">
+										<div class="input-field__inner">
+											<span class="input-field__help">от</span>
+											<input type="number" id="filter-project-projects-price-from" class="input-field__input" placeholder="500 000 000 000">
+										</div>
+										<div class="input-field__inner">
+											<span class="input-field__help">до</span>
+											<input type="number" id="filter-project-projects-price-to" class="input-field__input" placeholder="500 000 000 000">
+										</div>
+									</div>
+								</fieldset>
+							</div>
+							<div class="projects-filter__item">
+								<div class="default-select projects-filter__select">
+									<select class="js-select">
+										<option value="0">AED</option>
+										<option value="1">USD</option>
+										<option value="2">EUR</option>
+										<option value="3">RUB</option>
+									</select>
+								</div>
+							</div>
+							<div class="projects-filter__item">
+								<button class="projects-filter__control filters-btn" data-id="filters-projects">
+									<span>Фильтр</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-filter"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="projects-filter__item">
+								<button class="projects-filter__btn btn">Найти</button>
+							</div>
+						</div>
+					</div>
 					<div class="projects__top">
 						<h4 class="projects__help">Найдено 156 объектов</h4>
 						<div class="projects__sort">
@@ -1085,628 +1081,6 @@
 	</div>
 	<!-- end of menu -->
 	<!-- filters -->
-	<div class="filters" id="filters-main">
-		<div class="filters__wrap">
-			<div class="filters__wrapper">
-				<div class="filters__top">
-					<h2 class="filters__heading">Фильтры</h2>
-					<button class="filters__close-btn filters__close">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-close"></use>
-						</svg>
-					</button>
-				</div>
-				<div class="filters__content">
-					<div class="filters__block">
-						<h3 class="filters__title">Недвижимость</h3>
-						<div class="filters__scroll" data-simplebar>
-							<div class="filters__checkboxes">
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-real-estate-01">
-										<label for="filter-main-real-estate-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Новые проекты</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-real-estate-03">
-										<label for="filter-main-real-estate-03" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Готовое жилье</span>
-										</label>
-									</div>
-								</div>
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-real-estate-02">
-										<label for="filter-main-real-estate-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Коммерческая недвижимость</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-real-estate-04">
-										<label for="filter-main-real-estate-04" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Земельные участки</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Тип недвижимости</h3>
-						<div class="filters__scroll" data-simplebar>
-							<div class="filters__checkboxes">
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-type-real-estate-01">
-										<label for="filter-main-type-real-estate-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Апартаменты</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-type-real-estate-02">
-										<label for="filter-main-type-real-estate-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Пентхаусы</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-type-real-estate-03">
-										<label for="filter-main-type-real-estate-03" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Дуплексы</span>
-										</label>
-									</div>
-								</div>
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-type-real-estate-11">
-										<label for="filter-main-type-real-estate-11" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Таунхаусы</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-type-real-estate-12">
-										<label for="filter-main-type-real-estate-12" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Виллы</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-type-real-estate-13">
-										<label for="filter-main-type-real-estate-13" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Отельные апартаменты</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Эмират</h3>
-						<div class="filters__inner">
-							<div class="filters__column">
-								<div class="default-select filters__select">
-									<select class="js-select">
-										<option value="0">Дубай</option>
-										<option value="1">Дубай</option>
-										<option value="2">Дубай</option>
-									</select>
-								</div>
-							</div>
-							<div class="filters__column"></div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Районы в Дубай</h3>
-						<div class="filters__scroll" data-simplebar>
-							<div class="filters__checkboxes">
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-01">
-										<label for="filter-main-district-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-02">
-										<label for="filter-main-district-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Business Bay</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-03">
-										<label for="filter-main-district-03" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Marina</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-04">
-										<label for="filter-main-district-04" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Palm Jumeirah</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-05">
-										<label for="filter-main-district-05" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Emaar Beachfront</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-06">
-										<label for="filter-main-district-06" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MBR City - Meydan</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-07">
-										<label for="filter-main-district-07" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Creek Harbour</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-08">
-										<label for="filter-main-district-08" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Hills Estate</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-09">
-										<label for="filter-main-district-09" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
-									</div>
-								</div>
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-11">
-										<label for="filter-main-district-11" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-12">
-										<label for="filter-main-district-12" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Business Bay</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-13">
-										<label for="filter-main-district-13" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Marina</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-14">
-										<label for="filter-main-district-14" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Palm Jumeirah</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-15">
-										<label for="filter-main-district-15" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Emaar Beachfront</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-16">
-										<label for="filter-main-district-16" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MBR City - Meydan</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-17">
-										<label for="filter-main-district-17" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Creek Harbour</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-18">
-										<label for="filter-main-district-18" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Hills Estate</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-district-19">
-										<label for="filter-main-district-19" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Цена</h3>
-						<fieldset class="input-field filters__input">
-							<div class="input-field__wrapper">
-								<div class="input-field__inner">
-									<span class="input-field__num">USD</span>
-									<input type="number" id="filter-main-projects-price-from" class="input-field__input" placeholder="" value="1000000">
-									<label for="filter-main-projects-price-from" class="input-field__label">Цена от</label>
-								</div>
-								<div class="input-field__inner">
-									<span class="input-field__num">USD</span>
-									<input type="number" id="filter-main-projects-price-to" class="input-field__input" placeholder="" value="100000000">
-									<label for="filter-main-projects-price-to" class="input-field__label">Цена до</label>
-								</div>
-							</div>
-						</fieldset>
-					</div>
-					<div class="filters__block">
-						<div class="filters__inner">
-							<div class="filters__column">
-								<h3 class="filters__title">Площадь</h3>
-								<fieldset class="input-field filters__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__inner">
-											<span class="input-field__num">м²</span>
-											<input type="number" id="filter-main-projects-square-from" class="input-field__input" placeholder="" value="78">
-											<label for="filter-main-projects-square-from" class="input-field__label">от</label>
-										</div>
-										<div class="input-field__inner">
-											<span class="input-field__num">м²</span>
-											<input type="number" id="filter-main-projects-square-to" class="input-field__input" placeholder="" value="3560">
-											<label for="filter-main-projects-square-to" class="input-field__label">до</label>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-							<div class="filters__column">
-								<h3 class="filters__title">Площадь участка</h3>
-								<fieldset class="input-field filters__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__inner">
-											<span class="input-field__num">сот.</span>
-											<input type="number" id="filter-main-projects-square-s-from" class="input-field__input" placeholder="" value="78">
-											<label for="filter-main-projects-square-s-from" class="input-field__label">от</label>
-										</div>
-										<div class="input-field__inner">
-											<span class="input-field__num">сот.</span>
-											<input type="number" id="filter-main-projects-square-s-to" class="input-field__input" placeholder="" value="3560">
-											<label for="filter-main-projects-square-s-to" class="input-field__label">до</label>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Год сдачи</h3>
-						<div class="filters__inner">
-							<div class="filters__column">
-								<fieldset class="input-field filters__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__inner">
-											<input type="number" id="filter-main-projects-year-from" class="input-field__input" placeholder="" value="1990">
-											<label for="filter-main-projects-price-from" class="input-field__label">от</label>
-										</div>
-										<div class="input-field__inner">
-											<input type="number" id="filter-main-projects-year-to" class="input-field__input" placeholder="" value="2029">
-											<label for="filter-main-projects-price-to" class="input-field__label">до</label>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-							<div class="filters__column"></div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<div class="filters__inner">
-							<div class="filters__column">
-								<h3 class="filters__title">Планировка</h3>
-								<div class="filters__radio">
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-main-layout-01" name="filter-main-layout" checked>
-										<label for="filter-main-layout-01" class="radio-checkbox__group">
-											<span class="radio-checkbox__icon"></span>
-											<span class="radio-checkbox__title">Неважно</span>
-										</label>
-									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-main-layout-02" name="filter-main-layout">
-										<label for="filter-main-layout-02" class="radio-checkbox__group">
-											<span class="radio-checkbox__icon"></span>
-											<span class="radio-checkbox__title">1</span>
-										</label>
-									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-main-layout-03" name="filter-main-layout">
-										<label for="filter-main-layout-03" class="radio-checkbox__group">
-											<span class="radio-checkbox__icon"></span>
-											<span class="radio-checkbox__title">2</span>
-										</label>
-									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-main-layout-04" name="filter-main-layout">
-										<label for="filter-main-layout-04" class="radio-checkbox__group">
-											<span class="radio-checkbox__icon"></span>
-											<span class="radio-checkbox__title">3+</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="filters__column">
-								<h3 class="filters__title">Санузлов</h3>
-								<div class="filters__radio">
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-main-bathrooms-01" name="filter-main-bathrooms" checked>
-										<label for="filter-main-bathrooms-01" class="radio-checkbox__group">
-											<span class="radio-checkbox__icon"></span>
-											<span class="radio-checkbox__title">Неважно</span>
-										</label>
-									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-main-bathrooms-02" name="filter-main-bathrooms">
-										<label for="filter-main-bathrooms-02" class="radio-checkbox__group">
-											<span class="radio-checkbox__icon"></span>
-											<span class="radio-checkbox__title">1</span>
-										</label>
-									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-main-bathrooms-03" name="filter-main-bathrooms">
-										<label for="filter-main-bathrooms-03" class="radio-checkbox__group">
-											<span class="radio-checkbox__icon"></span>
-											<span class="radio-checkbox__title">2</span>
-										</label>
-									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-main-bathrooms-04" name="filter-main-bathrooms">
-										<label for="filter-main-bathrooms-04" class="radio-checkbox__group">
-											<span class="radio-checkbox__icon"></span>
-											<span class="radio-checkbox__title">3+</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Мебель</h3>
-						<div class="filters__radio">
-							<div class="radio-checkbox filters__radio-btn">
-								<input type="radio" class="radio-checkbox__input" id="filter-main-furniture-01" name="filter-main-furniture" checked>
-								<label for="filter-main-furniture-01" class="radio-checkbox__group">
-									<span class="radio-checkbox__icon"></span>
-									<span class="radio-checkbox__title">Неважно</span>
-								</label>
-							</div>
-							<div class="radio-checkbox filters__radio-btn">
-								<input type="radio" class="radio-checkbox__input" id="filter-main-furniture-02" name="filter-main-furniture">
-								<label for="filter-main-furniture-02" class="radio-checkbox__group">
-									<span class="radio-checkbox__icon"></span>
-									<span class="radio-checkbox__title">С мебелью</span>
-								</label>
-							</div>
-							<div class="radio-checkbox filters__radio-btn">
-								<input type="radio" class="radio-checkbox__input" id="filter-main-furniture-03" name="filter-main-furniture">
-								<label for="filter-main-furniture-03" class="radio-checkbox__group">
-									<span class="radio-checkbox__icon"></span>
-									<span class="radio-checkbox__title">Без мебели</span>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Удобства</h3>
-						<div class="filters__scroll" data-simplebar>
-							<div class="filters__checkboxes">
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-services-01">
-										<label for="filter-main-services-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Бассейн</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-services-02">
-										<label for="filter-main-services-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Балкон</span>
-										</label>
-									</div>
-								</div>
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-services-11">
-										<label for="filter-main-services-11" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Терраса</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-services-12">
-										<label for="filter-main-services-12" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Парковка</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Застройщик</h3>
-						<div class="filters__scroll" data-simplebar>
-							<div class="filters__checkboxes">
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-01">
-										<label for="filter-main-developers-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">EMAAR Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-02">
-										<label for="filter-main-developers-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Nakheel Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-03">
-										<label for="filter-main-developers-03" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MERAAS</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-04">
-										<label for="filter-main-developers-04" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">DAMAC Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-05">
-										<label for="filter-main-developers-05" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Ellington Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-06">
-										<label for="filter-main-developers-06" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Omniyat Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-07">
-										<label for="filter-main-developers-07" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Select Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-08">
-										<label for="filter-main-developers-08" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Sobha Realty</span>
-										</label>
-									</div>
-								</div>
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-11">
-										<label for="filter-main-developers-11" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">EMAAR Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-12">
-										<label for="filter-main-developers-12" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Nakheel Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-13">
-										<label for="filter-main-developers-13" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MERAAS</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-14">
-										<label for="filter-main-developers-14" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">DAMAC Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-15">
-										<label for="filter-main-developers-15" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Ellington Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-16">
-										<label for="filter-main-developers-16" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Omniyat Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-17">
-										<label for="filter-main-developers-17" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Select Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-developers-18">
-										<label for="filter-main-developers-18" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Sobha Realty</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Дополнительно</h3>
-						<div class="filters__scroll" data-simplebar>
-							<div class="filters__checkboxes">
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-additional-01">
-										<label for="filter-main-additional-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Рассрочка</span>
-										</label>
-									</div>
-								</div>
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-main-additional-02">
-										<label for="filter-main-additional-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Кредит</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="filters__bottom">
-					<a href="#" class="filters__link">Сбросить фильтр</a>
-					<a href="#" class="filters__btn btn btn--md btn--dark">Показать объекты</a>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class="filters" id="filters-projects">
 		<div class="filters__wrap">
 			<div class="filters__wrapper">
@@ -1719,8 +1093,8 @@
 					</button>
 				</div>
 				<div class="filters__content">
-					<div class="filters__block" disabled>
-						<h3 class="filters__title">Недвижимость</h3>
+					<div class="filters__block">
+						<h3 class="filters__title">Вид недвижимости</h3>
 						<div class="filters__scroll" data-simplebar>
 							<div class="filters__checkboxes">
 								<div class="filters__column">
@@ -1728,14 +1102,14 @@
 										<input type="checkbox" class="square-checkbox__input" id="filter-project-real-estate-01">
 										<label for="filter-project-real-estate-01" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Новые проекты</span>
+											<span class="square-checkbox__title">Жилая недвижимость</span>
 										</label>
 									</div>
 									<div class="square-checkbox filters__checkbox">
 										<input type="checkbox" class="square-checkbox__input" id="filter-project-real-estate-03">
 										<label for="filter-project-real-estate-03" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Готовое жилье</span>
+											<span class="square-checkbox__title">Коммерческая недвижимость</span>
 										</label>
 									</div>
 								</div>
@@ -1744,17 +1118,29 @@
 										<input type="checkbox" class="square-checkbox__input" id="filter-project-real-estate-02">
 										<label for="filter-project-real-estate-02" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Коммерческая недвижимость</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-real-estate-04">
-										<label for="filter-project-real-estate-04" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
 											<span class="square-checkbox__title">Земельные участки</span>
 										</label>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filters__block">
+						<h3 class="filters__title">Недвижимость</h3>
+						<div class="filters__inner">
+							<div class="default-select filters__select">
+								<select class="js-select">
+									<option value="0">Городская</option>
+									<option value="1">Дубай</option>
+									<option value="2">Дубай</option>
+								</select>
+							</div>
+							<div class="default-select filters__select">
+								<select class="js-select">
+									<option value="0">Покупка</option>
+									<option value="1">Дубай</option>
+									<option value="2">Дубай</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -1767,19 +1153,26 @@
 										<input type="checkbox" class="square-checkbox__input" id="filter-project-type-real-estate-01">
 										<label for="filter-project-type-real-estate-01" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Апартаменты</span>
+											<span class="square-checkbox__title">Квартира в новостройке </span>
 										</label>
 									</div>
 									<div class="square-checkbox filters__checkbox">
 										<input type="checkbox" class="square-checkbox__input" id="filter-project-type-real-estate-02">
 										<label for="filter-project-type-real-estate-02" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Пентхаусы</span>
+											<span class="square-checkbox__title">Вторичное жилье</span>
 										</label>
 									</div>
 									<div class="square-checkbox filters__checkbox">
 										<input type="checkbox" class="square-checkbox__input" id="filter-project-type-real-estate-03">
 										<label for="filter-project-type-real-estate-03" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Апартаменты</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-type-real-estate-04">
+										<label for="filter-project-type-real-estate-04" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
 											<span class="square-checkbox__title">Дуплексы</span>
 										</label>
@@ -1790,7 +1183,7 @@
 										<input type="checkbox" class="square-checkbox__input" id="filter-project-type-real-estate-11">
 										<label for="filter-project-type-real-estate-11" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Таунхаусы</span>
+											<span class="square-checkbox__title">Пентхаусы</span>
 										</label>
 									</div>
 									<div class="square-checkbox filters__checkbox">
@@ -1804,7 +1197,7 @@
 										<input type="checkbox" class="square-checkbox__input" id="filter-project-type-real-estate-13">
 										<label for="filter-project-type-real-estate-13" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Отельные апартаменты</span>
+											<span class="square-checkbox__title">Коттеджи</span>
 										</label>
 									</div>
 								</div>
@@ -1812,261 +1205,58 @@
 						</div>
 					</div>
 					<div class="filters__block">
-						<h3 class="filters__title">Эмират</h3>
+						<h3 class="filters__title">Стоимость</h3>
 						<div class="filters__inner">
-							<div class="filters__column">
-								<div class="default-select filters__select">
-									<select class="js-select">
-										<option value="0">Дубай</option>
-										<option value="1">Дубай</option>
-										<option value="2">Дубай</option>
-									</select>
-								</div>
-							</div>
-							<div class="filters__column"></div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Районы в Дубай</h3>
-						<div class="filters__scroll" data-simplebar>
-							<div class="filters__checkboxes">
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-01">
-										<label for="filter-project-district-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
+							<fieldset class="input-field filters__input">
+								<div class="input-field__wrapper">
+									<div class="input-field__inner">
+										<span class="input-field__help">от</span>
+										<input type="number" id="filter-project-projects-price-from" class="input-field__input" placeholder="500 000 000 000">
 									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-02">
-										<label for="filter-project-district-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Business Bay</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-03">
-										<label for="filter-project-district-03" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Marina</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-04">
-										<label for="filter-project-district-04" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Palm Jumeirah</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-05">
-										<label for="filter-project-district-05" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Emaar Beachfront</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-06">
-										<label for="filter-project-district-06" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MBR City - Meydan</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-07">
-										<label for="filter-project-district-07" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Creek Harbour</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-08">
-										<label for="filter-project-district-08" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Hills Estate</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-09">
-										<label for="filter-project-district-09" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
+									<div class="input-field__inner">
+										<span class="input-field__help">до</span>
+										<input type="number" id="filter-project-projects-price-to" class="input-field__input" placeholder="500 000 000 000">
 									</div>
 								</div>
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-11">
-										<label for="filter-project-district-11" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-12">
-										<label for="filter-project-district-12" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Business Bay</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-13">
-										<label for="filter-project-district-13" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Marina</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-14">
-										<label for="filter-project-district-14" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Palm Jumeirah</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-15">
-										<label for="filter-project-district-15" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Emaar Beachfront</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-16">
-										<label for="filter-project-district-16" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MBR City - Meydan</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-17">
-										<label for="filter-project-district-17" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Creek Harbour</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-18">
-										<label for="filter-project-district-18" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Hills Estate</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-district-19">
-										<label for="filter-project-district-19" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
-									</div>
-								</div>
+							</fieldset>
+							<div class="default-select filters__select">
+								<select class="js-select">
+									<option value="0">RUB</option>
+									<option value="1">AED</option>
+									<option value="2">USD</option>
+								</select>
 							</div>
 						</div>
 					</div>
 					<div class="filters__block">
-						<h3 class="filters__title">Цена</h3>
-						<fieldset class="input-field filters__input">
-							<div class="input-field__wrapper">
-								<div class="input-field__inner">
-									<span class="input-field__num">USD</span>
-									<input type="number" id="filter-project-projects-price-from" class="input-field__input" placeholder="" value="1000000">
-									<label for="filter-project-projects-price-from" class="input-field__label">Цена от</label>
-								</div>
-								<div class="input-field__inner">
-									<span class="input-field__num">USD</span>
-									<input type="number" id="filter-project-projects-price-to" class="input-field__input" placeholder="" value="100000000">
-									<label for="filter-project-projects-price-to" class="input-field__label">Цена до</label>
-								</div>
-							</div>
-						</fieldset>
-					</div>
-					<div class="filters__block">
-						<div class="filters__inner">
-							<div class="filters__column" disabled>
-								<h3 class="filters__title">Площадь</h3>
-								<fieldset class="input-field filters__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__inner">
-											<span class="input-field__num">м²</span>
-											<input type="number" id="filter-project-projects-square-from" class="input-field__input" placeholder="" value="78">
-											<label for="filter-project-projects-square-from" class="input-field__label">от</label>
-										</div>
-										<div class="input-field__inner">
-											<span class="input-field__num">м²</span>
-											<input type="number" id="filter-project-projects-square-to" class="input-field__input" placeholder="" value="3560">
-											<label for="filter-project-projects-square-to" class="input-field__label">до</label>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-							<div class="filters__column">
-								<h3 class="filters__title">Площадь участка</h3>
-								<fieldset class="input-field filters__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__inner">
-											<span class="input-field__num">сот.</span>
-											<input type="number" id="filter-project-projects-square-s-from" class="input-field__input" placeholder="" value="78">
-											<label for="filter-project-projects-square-s-from" class="input-field__label">от</label>
-										</div>
-										<div class="input-field__inner">
-											<span class="input-field__num">сот.</span>
-											<input type="number" id="filter-project-projects-square-s-to" class="input-field__input" placeholder="" value="3560">
-											<label for="filter-project-projects-square-s-to" class="input-field__label">до</label>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block" disabled>
-						<h3 class="filters__title">Год сдачи</h3>
 						<div class="filters__inner">
 							<div class="filters__column">
-								<fieldset class="input-field filters__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__inner">
-											<input type="number" id="filter-project-projects-year-from" class="input-field__input" placeholder="" value="1990">
-											<label for="filter-project-projects-price-from" class="input-field__label">от</label>
-										</div>
-										<div class="input-field__inner">
-											<input type="number" id="filter-project-projects-year-to" class="input-field__input" placeholder="" value="2029">
-											<label for="filter-project-projects-price-to" class="input-field__label">до</label>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-							<div class="filters__column"></div>
-						</div>
-					</div>
-					<div class="filters__block" disabled>
-						<div class="filters__inner">
-							<div class="filters__column">
-								<h3 class="filters__title">Планировка</h3>
+								<h3 class="filters__title">Комнат</h3>
 								<div class="filters__radio">
 									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-project-layout-01" name="filter-project-layout" checked>
-										<label for="filter-project-layout-01" class="radio-checkbox__group">
+										<input type="radio" class="radio-checkbox__input" id="filter-project-rooms-all" name="filter-project-rooms" checked>
+										<label for="filter-project-rooms-all" class="radio-checkbox__group">
 											<span class="radio-checkbox__icon"></span>
 											<span class="radio-checkbox__title">Неважно</span>
 										</label>
 									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-project-layout-02" name="filter-project-layout">
-										<label for="filter-project-layout-02" class="radio-checkbox__group">
+									<div class="radio-checkbox filters__radio-btn filters__radio-btn--circle">
+										<input type="radio" class="radio-checkbox__input" id="filter-project-rooms-01" name="filter-project-rooms">
+										<label for="filter-project-rooms-01" class="radio-checkbox__group">
 											<span class="radio-checkbox__icon"></span>
 											<span class="radio-checkbox__title">1</span>
 										</label>
 									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-project-layout-03" name="filter-project-layout">
-										<label for="filter-project-layout-03" class="radio-checkbox__group">
+									<div class="radio-checkbox filters__radio-btn filters__radio-btn--circle">
+										<input type="radio" class="radio-checkbox__input" id="filter-project-rooms-02" name="filter-project-rooms">
+										<label for="filter-project-rooms-02" class="radio-checkbox__group">
 											<span class="radio-checkbox__icon"></span>
 											<span class="radio-checkbox__title">2</span>
 										</label>
 									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-project-layout-04" name="filter-project-layout">
-										<label for="filter-project-layout-04" class="radio-checkbox__group">
+									<div class="radio-checkbox filters__radio-btn filters__radio-btn--circle">
+										<input type="radio" class="radio-checkbox__input" id="filter-project-rooms-03" name="filter-project-rooms">
+										<label for="filter-project-rooms-03" class="radio-checkbox__group">
 											<span class="radio-checkbox__icon"></span>
 											<span class="radio-checkbox__title">3+</span>
 										</label>
@@ -2077,29 +1267,29 @@
 								<h3 class="filters__title">Санузлов</h3>
 								<div class="filters__radio">
 									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-project-bathrooms-01" name="filter-project-bathrooms" checked>
-										<label for="filter-project-bathrooms-01" class="radio-checkbox__group">
+										<input type="radio" class="radio-checkbox__input" id="filter-project-bathrooms-all" name="filter-project-bathrooms" checked>
+										<label for="filter-project-bathrooms-all" class="radio-checkbox__group">
 											<span class="radio-checkbox__icon"></span>
 											<span class="radio-checkbox__title">Неважно</span>
 										</label>
 									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-project-bathrooms-02" name="filter-project-bathrooms">
-										<label for="filter-project-bathrooms-02" class="radio-checkbox__group">
+									<div class="radio-checkbox filters__radio-btn filters__radio-btn--circle">
+										<input type="radio" class="radio-checkbox__input" id="filter-project-bathrooms-01" name="filter-project-bathrooms">
+										<label for="filter-project-bathrooms-01" class="radio-checkbox__group">
 											<span class="radio-checkbox__icon"></span>
 											<span class="radio-checkbox__title">1</span>
 										</label>
 									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-project-bathrooms-03" name="filter-project-bathrooms">
-										<label for="filter-project-bathrooms-03" class="radio-checkbox__group">
+									<div class="radio-checkbox filters__radio-btn filters__radio-btn--circle">
+										<input type="radio" class="radio-checkbox__input" id="filter-project-bathrooms-02" name="filter-project-bathrooms">
+										<label for="filter-project-bathrooms-02" class="radio-checkbox__group">
 											<span class="radio-checkbox__icon"></span>
 											<span class="radio-checkbox__title">2</span>
 										</label>
 									</div>
-									<div class="radio-checkbox filters__radio-btn">
-										<input type="radio" class="radio-checkbox__input" id="filter-project-bathrooms-04" name="filter-project-bathrooms">
-										<label for="filter-project-bathrooms-04" class="radio-checkbox__group">
+									<div class="radio-checkbox filters__radio-btn filters__radio-btn--circle">
+										<input type="radio" class="radio-checkbox__input" id="filter-project-bathrooms-03" name="filter-project-bathrooms">
+										<label for="filter-project-bathrooms-03" class="radio-checkbox__group">
 											<span class="radio-checkbox__icon"></span>
 											<span class="radio-checkbox__title">3+</span>
 										</label>
@@ -2108,578 +1298,353 @@
 							</div>
 						</div>
 					</div>
-					<div class="filters__block" disabled>
-						<h3 class="filters__title">Мебель</h3>
-						<div class="filters__radio">
-							<div class="radio-checkbox filters__radio-btn">
-								<input type="radio" class="radio-checkbox__input" id="filter-project-furniture-01" name="filter-project-furniture" checked>
-								<label for="filter-project-furniture-01" class="radio-checkbox__group">
-									<span class="radio-checkbox__icon"></span>
-									<span class="radio-checkbox__title">Неважно</span>
-								</label>
-							</div>
-							<div class="radio-checkbox filters__radio-btn">
-								<input type="radio" class="radio-checkbox__input" id="filter-project-furniture-02" name="filter-project-furniture">
-								<label for="filter-project-furniture-02" class="radio-checkbox__group">
-									<span class="radio-checkbox__icon"></span>
-									<span class="radio-checkbox__title">С мебелью</span>
-								</label>
-							</div>
-							<div class="radio-checkbox filters__radio-btn">
-								<input type="radio" class="radio-checkbox__input" id="filter-project-furniture-03" name="filter-project-furniture">
-								<label for="filter-project-furniture-03" class="radio-checkbox__group">
-									<span class="radio-checkbox__icon"></span>
-									<span class="radio-checkbox__title">Без мебели</span>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block" disabled>
-						<h3 class="filters__title">Удобства</h3>
-						<div class="filters__scroll" data-simplebar>
-							<div class="filters__checkboxes">
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-services-01">
-										<label for="filter-project-services-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Бассейн</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-services-02">
-										<label for="filter-project-services-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Балкон</span>
-										</label>
-									</div>
-								</div>
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-services-11">
-										<label for="filter-project-services-11" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Терраса</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-services-12">
-										<label for="filter-project-services-12" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Парковка</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block" disabled>
-						<h3 class="filters__title">Застройщик</h3>
-						<div class="filters__scroll" data-simplebar>
-							<div class="filters__checkboxes">
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-01">
-										<label for="filter-project-developers-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">EMAAR Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-02">
-										<label for="filter-project-developers-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Nakheel Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-03">
-										<label for="filter-project-developers-03" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MERAAS</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-04">
-										<label for="filter-project-developers-04" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">DAMAC Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-05">
-										<label for="filter-project-developers-05" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Ellington Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-06">
-										<label for="filter-project-developers-06" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Omniyat Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-07">
-										<label for="filter-project-developers-07" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Select Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-08">
-										<label for="filter-project-developers-08" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Sobha Realty</span>
-										</label>
-									</div>
-								</div>
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-11">
-										<label for="filter-project-developers-11" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">EMAAR Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-12">
-										<label for="filter-project-developers-12" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Nakheel Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-13">
-										<label for="filter-project-developers-13" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MERAAS</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-14">
-										<label for="filter-project-developers-14" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">DAMAC Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-15">
-										<label for="filter-project-developers-15" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Ellington Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-16">
-										<label for="filter-project-developers-16" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Omniyat Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-17">
-										<label for="filter-project-developers-17" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Select Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-developers-18">
-										<label for="filter-project-developers-18" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Sobha Realty</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="filters__block">
-						<h3 class="filters__title">Дополнительно</h3>
-						<div class="filters__scroll" data-simplebar>
-							<div class="filters__checkboxes">
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-additional-01">
-										<label for="filter-project-additional-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Рассрочка</span>
-										</label>
-									</div>
-								</div>
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-additional-02">
-										<label for="filter-project-additional-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Кредит</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="filters__bottom">
-					<a href="#" class="filters__link">Сбросить фильтр</a>
-					<a href="#" class="filters__btn btn btn--md btn--dark">Показать объекты</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="filters" id="filters-projects-2">
-		<div class="filters__wrap">
-			<div class="filters__wrapper">
-				<div class="filters__top">
-					<h2 class="filters__heading">Фильтры</h2>
-					<button class="filters__close-btn filters__close">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-close"></use>
-						</svg>
-					</button>
-				</div>
-				<div class="filters__content">
-					<div class="filters__block">
-						<h3 class="filters__title">Недвижимость</h3>
-						<div class="filters__inner">
-							<div class="filters__column">
-								<div class="default-select filters__select">
-									<select class="js-select">
-										<option value="0">Земельные участки</option>
-										<option value="1">Земельные участки</option>
-										<option value="2">Земельные участки</option>
-									</select>
-								</div>
-							</div>
-							<div class="filters__column"></div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Эмират</h3>
-						<div class="filters__inner">
-							<div class="filters__column">
-								<div class="default-select filters__select">
-									<select class="js-select">
-										<option value="0">Дубай</option>
-										<option value="1">Дубай</option>
-										<option value="2">Дубай</option>
-									</select>
-								</div>
-							</div>
-							<div class="filters__column"></div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Районы в Дубай</h3>
-						<div class="filters__scroll" data-simplebar>
-							<div class="filters__checkboxes">
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-01">
-										<label for="filter-project-2-district-01" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-02">
-										<label for="filter-project-2-district-02" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Business Bay</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-03">
-										<label for="filter-project-2-district-03" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Marina</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-04">
-										<label for="filter-project-2-district-04" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Palm Jumeirah</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-05">
-										<label for="filter-project-2-district-05" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Emaar Beachfront</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-06">
-										<label for="filter-project-2-district-06" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MBR City - Meydan</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-07">
-										<label for="filter-project-2-district-07" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Creek Harbour</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-08">
-										<label for="filter-project-2-district-08" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Hills Estate</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-09">
-										<label for="filter-project-2-district-09" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
-									</div>
-								</div>
-								<div class="filters__column">
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-11">
-										<label for="filter-project-2-district-11" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-12">
-										<label for="filter-project-2-district-12" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Business Bay</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-13">
-										<label for="filter-project-2-district-13" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Marina</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-14">
-										<label for="filter-project-2-district-14" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Palm Jumeirah</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-15">
-										<label for="filter-project-2-district-15" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Emaar Beachfront</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-16">
-										<label for="filter-project-2-district-16" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MBR City - Meydan</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-17">
-										<label for="filter-project-2-district-17" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Creek Harbour</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-18">
-										<label for="filter-project-2-district-18" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Dubai Hills Estate</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-district-19">
-										<label for="filter-project-2-district-19" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Downtown</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Цена</h3>
+						<h3 class="filters__title">Площадь</h3>
 						<fieldset class="input-field filters__input">
 							<div class="input-field__wrapper">
 								<div class="input-field__inner">
-									<span class="input-field__num">USD</span>
-									<input type="number" id="filter-project-2-projects-price-from" class="input-field__input" placeholder="" value="1000000">
-									<label for="filter-project-2-projects-price-from" class="input-field__label">Цена от</label>
+									<span class="input-field__help">от</span>
+									<span class="input-field__help input-field__help--right">м<sup>²</sup></span>
+									<input type="number" id="filter-project-projects-price-from" class="input-field__input" placeholder="48">
 								</div>
 								<div class="input-field__inner">
-									<span class="input-field__num">USD</span>
-									<input type="number" id="filter-project-2-projects-price-to" class="input-field__input" placeholder="" value="100000000">
-									<label for="filter-project-2-projects-price-to" class="input-field__label">Цена до</label>
+									<span class="input-field__help">до</span>
+									<span class="input-field__help input-field__help--right">м<sup>²</sup></span>
+									<input type="number" id="filter-project-projects-price-to" class="input-field__input" placeholder="1300">
 								</div>
 							</div>
 						</fieldset>
 					</div>
 					<div class="filters__block">
+						<h3 class="filters__title">Этаж</h3>
+						<div class="filters__inner">
+							<fieldset class="input-field filters__input filters__input--fifty">
+								<div class="input-field__wrapper">
+									<div class="input-field__inner">
+										<span class="input-field__help">от</span>
+										<input type="number" id="filter-project-projects-price-from" class="input-field__input" placeholder="48">
+									</div>
+									<div class="input-field__inner">
+										<span class="input-field__help">до</span>
+										<input type="number" id="filter-project-projects-price-to" class="input-field__input" placeholder="1300">
+									</div>
+								</div>
+							</fieldset>
+							<div class="filters__radio filters__radio--fifty">
+								<div class="radio-checkbox filters__radio-btn">
+									<input type="radio" class="radio-checkbox__input" id="filter-project-floor-01" name="filter-project-floor">
+									<label for="filter-project-floor-01" class="radio-checkbox__group">
+										<span class="radio-checkbox__icon"></span>
+										<span class="radio-checkbox__title">Не первый</span>
+									</label>
+								</div>
+								<div class="radio-checkbox filters__radio-btn">
+									<input type="radio" class="radio-checkbox__input" id="filter-project-floor-02" name="filter-project-floor">
+									<label for="filter-project-floor-02" class="radio-checkbox__group">
+										<span class="radio-checkbox__icon"></span>
+										<span class="radio-checkbox__title">Не последний</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filters__block">
+						<h3 class="filters__title">Класс</h3>
+						<div class="filters__scroll" data-simplebar>
+							<div class="filters__checkboxes">
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-real-estate-01">
+										<label for="filter-project-real-estate-01" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Эконом</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-real-estate-03">
+										<label for="filter-project-real-estate-03" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Комфорт</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-real-estate-05">
+										<label for="filter-project-real-estate-05" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Бизнес</span>
+										</label>
+									</div>
+								</div>
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-real-estate-02">
+										<label for="filter-project-real-estate-02" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Элит</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-real-estate-04">
+										<label for="filter-project-real-estate-04" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Премиум</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filters__block">
+						<h3 class="filters__title">Год постройки</h3>
 						<div class="filters__inner">
 							<div class="filters__column">
-								<h3 class="filters__title">Площадь</h3>
 								<fieldset class="input-field filters__input">
 									<div class="input-field__wrapper">
 										<div class="input-field__inner">
-											<span class="input-field__num">м²</span>
-											<input type="number" id="filter-project-2-projects-square-from" class="input-field__input" placeholder="" value="78">
-											<label for="filter-project-2-projects-square-from" class="input-field__label">от</label>
+											<span class="input-field__help">с</span>
+											<input type="number" id="filter-project-projects-price-from" class="input-field__input" placeholder="1947">
 										</div>
 										<div class="input-field__inner">
-											<span class="input-field__num">м²</span>
-											<input type="number" id="filter-project-2-projects-square-to" class="input-field__input" placeholder="" value="3560">
-											<label for="filter-project-2-projects-square-to" class="input-field__label">до</label>
+											<span class="input-field__help">по</span>
+											<input type="number" id="filter-project-projects-price-to" class="input-field__input" placeholder="2023">
 										</div>
 									</div>
 								</fieldset>
 							</div>
+							<div class="filters__column"></div>
+						</div>
+					</div>
+					<div class="filters__block">
+						<h3 class="filters__title">Ремонт</h3>
+						<div class="filters__scroll" data-simplebar>
+							<div class="filters__checkboxes">
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-refit-01">
+										<label for="filter-project-refit-01" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Есть</span>
+										</label>
+									</div>
+								</div>
+								<div class="filters__column"></div>
+							</div>
+						</div>
+					</div>
+					<div class="filters__block">
+						<h3 class="filters__title">Метро</h3>
+						<div class="filters__inner">
+							<fieldset class="input-field filters__input">
+								<div class="input-field__inner">
+									<input type="number" id="filter-project-metro-search" class="input-field__input" placeholder="Название метро...">
+								</div>
+								<div class="input-field__items">
+									<button class="input-field__item input-field__item--clear">Очистить все</button>
+									<button class="input-field__item">
+										<span>Авиамоторная</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</button>
+								</div>
+							</fieldset>
+						</div>
+						<div class="filters__scroll" data-simplebar>
+							<div class="filters__checkboxes">
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-01">
+										<label for="filter-project-metro-01" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Авиамоторная</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-02">
+										<label for="filter-project-metro-02" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Автозаводская</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-03">
+										<label for="filter-project-metro-03" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Александровский сад</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-04">
+										<label for="filter-project-metro-04" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Алексеевская</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-05">
+										<label for="filter-project-metro-05" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Алтуфьево</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-06">
+										<label for="filter-project-metro-06" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Аннино</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-07">
+										<label for="filter-project-metro-07" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Арбатская</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-08">
+										<label for="filter-project-metro-08" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Аэропорт</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-09">
+										<label for="filter-project-metro-09" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Аэропорт</span>
+										</label>
+									</div>
+								</div>
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-11">
+										<label for="filter-project-metro-11" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Бабушкинская</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-12">
+										<label for="filter-project-metro-12" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Багратионовская</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-13">
+										<label for="filter-project-metro-13" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Бауманская</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-14">
+										<label for="filter-project-metro-14" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Беговая</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-15">
+										<label for="filter-project-metro-15" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Белорусская</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-16">
+										<label for="filter-project-metro-16" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Беляево</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-17">
+										<label for="filter-project-metro-17" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Бибирево</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-18">
+										<label for="filter-project-metro-18" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Библиотека им. Ленина</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-19">
+										<label for="filter-project-metro-19" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Библиотека им. Ленина</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filters__block">
+						<h3 class="filters__title">До метро</h3>
+						<div class="filters__inner">
 							<div class="filters__column">
-								<h3 class="filters__title">Площадь участка</h3>
-								<fieldset class="input-field filters__input">
-									<div class="input-field__wrapper">
-										<div class="input-field__inner">
-											<span class="input-field__num">сот.</span>
-											<input type="number" id="filter-project-2-projects-square-s-from" class="input-field__input" placeholder="" value="78">
-											<label for="filter-project-2-projects-square-s-from" class="input-field__label">от</label>
-										</div>
-										<div class="input-field__inner">
-											<span class="input-field__num">сот.</span>
-											<input type="number" id="filter-project-2-projects-square-s-to" class="input-field__input" placeholder="" value="3560">
-											<label for="filter-project-2-projects-square-s-to" class="input-field__label">до</label>
-										</div>
+								<div class="filters__radio">
+									<div class="radio-checkbox filters__radio-btn">
+										<input type="radio" class="radio-checkbox__input" id="filter-project-to-the-subway-btn-01" name="filter-project-to-the-subway">
+										<label for="filter-project-to-the-subway-btn-01" class="radio-checkbox__group">
+											<span class="radio-checkbox__icon"></span>
+											<span class="radio-checkbox__title">Пешком</span>
+										</label>
 									</div>
-								</fieldset>
+									<div class="radio-checkbox filters__radio-btn">
+										<input type="radio" class="radio-checkbox__input" id="filter-project-to-the-subway-btn-02" name="filter-project-to-the-subway">
+										<label for="filter-project-to-the-subway-btn-02" class="radio-checkbox__group">
+											<span class="radio-checkbox__icon"></span>
+											<span class="radio-checkbox__title">На транспорте</span>
+										</label>
+									</div>
+								</div>
 							</div>
+							<div class="filters__column"></div>
 						</div>
-					</div>
-					<div class="filters__block">
-						<h3 class="filters__title">Застройщик</h3>
 						<div class="filters__scroll" data-simplebar>
 							<div class="filters__checkboxes">
 								<div class="filters__column">
 									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-01">
-										<label for="filter-project-2-developers-01" class="square-checkbox__group">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-to-the-subway-01">
+										<label for="filter-project-to-the-subway-01" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">EMAAR Properties</span>
+											<span class="square-checkbox__title">5 мин</span>
 										</label>
 									</div>
 									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-02">
-										<label for="filter-project-2-developers-02" class="square-checkbox__group">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-to-the-subway-02">
+										<label for="filter-project-to-the-subway-02" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Nakheel Properties</span>
+											<span class="square-checkbox__title">10 мин</span>
 										</label>
 									</div>
 									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-03">
-										<label for="filter-project-2-developers-03" class="square-checkbox__group">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-to-the-subway-03">
+										<label for="filter-project-to-the-subway-03" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MERAAS</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-04">
-										<label for="filter-project-2-developers-04" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">DAMAC Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-05">
-										<label for="filter-project-2-developers-05" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Ellington Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-06">
-										<label for="filter-project-2-developers-06" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Omniyat Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-07">
-										<label for="filter-project-2-developers-07" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Select Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-08">
-										<label for="filter-project-2-developers-08" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Sobha Realty</span>
+											<span class="square-checkbox__title">15 мин</span>
 										</label>
 									</div>
 								</div>
 								<div class="filters__column">
 									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-11">
-										<label for="filter-project-2-developers-11" class="square-checkbox__group">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-to-the-subway-04">
+										<label for="filter-project-to-the-subway-04" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">EMAAR Properties</span>
+											<span class="square-checkbox__title">20 мин</span>
 										</label>
 									</div>
 									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-12">
-										<label for="filter-project-2-developers-12" class="square-checkbox__group">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-to-the-subway-05">
+										<label for="filter-project-to-the-subway-05" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Nakheel Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-13">
-										<label for="filter-project-2-developers-13" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">MERAAS</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-14">
-										<label for="filter-project-2-developers-14" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">DAMAC Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-15">
-										<label for="filter-project-2-developers-15" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Ellington Properties</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-16">
-										<label for="filter-project-2-developers-16" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Omniyat Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-17">
-										<label for="filter-project-2-developers-17" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Select Group</span>
-										</label>
-									</div>
-									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-developers-18">
-										<label for="filter-project-2-developers-18" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Sobha Realty</span>
+											<span class="square-checkbox__title">30 мин</span>
 										</label>
 									</div>
 								</div>
@@ -2687,24 +1652,476 @@
 						</div>
 					</div>
 					<div class="filters__block">
-						<h3 class="filters__title">Дополнительно</h3>
+						<h3 class="filters__title">Жилой комплекс</h3>
+						<div class="filters__inner">
+							<fieldset class="input-field filters__input">
+								<div class="input-field__inner">
+									<input type="number" id="filter-project-metro-search" class="input-field__input" placeholder="Название ЖК...">
+								</div>
+								<div class="input-field__items">
+									<button class="input-field__item input-field__item--clear">Очистить все</button>
+									<button class="input-field__item">
+										<span>Авиамоторная</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</button>
+								</div>
+							</fieldset>
+						</div>
 						<div class="filters__scroll" data-simplebar>
 							<div class="filters__checkboxes">
 								<div class="filters__column">
 									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-additional-01">
-										<label for="filter-project-2-additional-01" class="square-checkbox__group">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-01">
+										<label for="filter-project-metro-01" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Рассрочка</span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-02">
+										<label for="filter-project-metro-02" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-03">
+										<label for="filter-project-metro-03" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-04">
+										<label for="filter-project-metro-04" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-05">
+										<label for="filter-project-metro-05" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-06">
+										<label for="filter-project-metro-06" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-07">
+										<label for="filter-project-metro-07" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-08">
+										<label for="filter-project-metro-08" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-09">
+										<label for="filter-project-metro-09" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
 										</label>
 									</div>
 								</div>
 								<div class="filters__column">
 									<div class="square-checkbox filters__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="filter-project-2-additional-02">
-										<label for="filter-project-2-additional-02" class="square-checkbox__group">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-11">
+										<label for="filter-project-metro-11" class="square-checkbox__group">
 											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Кредит</span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-12">
+										<label for="filter-project-metro-12" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-13">
+										<label for="filter-project-metro-13" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-14">
+										<label for="filter-project-metro-14" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-15">
+										<label for="filter-project-metro-15" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-16">
+										<label for="filter-project-metro-16" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-17">
+										<label for="filter-project-metro-17" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-18">
+										<label for="filter-project-metro-18" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-19">
+										<label for="filter-project-metro-19" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Название ЖК</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filters__block">
+						<h3 class="filters__title">Район</h3>
+						<div class="filters__inner">
+							<fieldset class="input-field filters__input">
+								<div class="input-field__inner">
+									<input type="number" id="filter-project-metro-search" class="input-field__input" placeholder="Название района...">
+								</div>
+								<div class="input-field__items">
+									<button class="input-field__item input-field__item--clear">Очистить все</button>
+									<button class="input-field__item">
+										<span>Авиамоторная</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</button>
+								</div>
+							</fieldset>
+						</div>
+						<div class="filters__scroll" data-simplebar>
+							<div class="filters__checkboxes">
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-01">
+										<label for="filter-project-metro-01" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Хамовники</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-02">
+										<label for="filter-project-metro-02" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Якиманка</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-03">
+										<label for="filter-project-metro-03" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Басманный</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-04">
+										<label for="filter-project-metro-04" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Пресненский</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-05">
+										<label for="filter-project-metro-05" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Замоскворечье</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-06">
+										<label for="filter-project-metro-06" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Таганский</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-07">
+										<label for="filter-project-metro-07" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Арбат</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-08">
+										<label for="filter-project-metro-08" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Аэропорт</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-09">
+										<label for="filter-project-metro-09" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Аэропорт</span>
+										</label>
+									</div>
+								</div>
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-11">
+										<label for="filter-project-metro-11" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Дорогомилово</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-12">
+										<label for="filter-project-metro-12" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Лефортово</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-13">
+										<label for="filter-project-metro-13" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Тверской</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-14">
+										<label for="filter-project-metro-14" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Раменки</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-15">
+										<label for="filter-project-metro-15" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Хорошевский</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-16">
+										<label for="filter-project-metro-16" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Хамовники</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-17">
+										<label for="filter-project-metro-17" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Хорошево-Мневники</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-18">
+										<label for="filter-project-metro-18" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Щукино</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-metro-19">
+										<label for="filter-project-metro-19" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Щукино</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filters__block">
+						<h3 class="filters__title">Высота потолков</h3>
+						<div class="filters__radio filters__radio--scroll">
+							<div class="radio-checkbox filters__radio-btn">
+								<input type="radio" class="radio-checkbox__input" id="filter-project-ceiling-height-all" name="filter-project-ceiling-height" checked>
+								<label for="filter-project-ceiling-height-all" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__title">Неважно</span>
+								</label>
+							</div>
+							<div class="radio-checkbox filters__radio-btn">
+								<input type="radio" class="radio-checkbox__input" id="filter-project-ceiling-height-01" name="filter-project-ceiling-height">
+								<label for="filter-project-ceiling-height-01" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__title">От 2,5 м</span>
+								</label>
+							</div>
+							<div class="radio-checkbox filters__radio-btn">
+								<input type="radio" class="radio-checkbox__input" id="filter-project-ceiling-height-02" name="filter-project-ceiling-height">
+								<label for="filter-project-ceiling-height-02" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__title">От 2,7 м</span>
+								</label>
+							</div>
+							<div class="radio-checkbox filters__radio-btn">
+								<input type="radio" class="radio-checkbox__input" id="filter-project-ceiling-height-03" name="filter-project-ceiling-height">
+								<label for="filter-project-ceiling-height-03" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__title">От 3 м</span>
+								</label>
+							</div>
+							<div class="radio-checkbox filters__radio-btn">
+								<input type="radio" class="radio-checkbox__input" id="filter-project-ceiling-height-4" name="filter-project-ceiling-height">
+								<label for="filter-project-ceiling-height-04" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__title">От 3,5 м</span>
+								</label>
+							</div>
+							<div class="radio-checkbox filters__radio-btn">
+								<input type="radio" class="radio-checkbox__input" id="filter-project-ceiling-height-05" name="filter-project-ceiling-height">
+								<label for="filter-project-ceiling-height-05" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__title">От 4 м</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="filters__block">
+						<h3 class="filters__title">Тип дома</h3>
+						<div class="filters__scroll" data-simplebar>
+							<div class="filters__checkboxes">
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-type-home-01">
+										<label for="filter-project-type-home-01" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Кирпичный</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-type-home-03">
+										<label for="filter-project-type-home-03" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Монолитный</span>
+										</label>
+									</div>
+								</div>
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-type-home-02">
+										<label for="filter-project-type-home-02" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Панельный</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-type-home-04">
+										<label for="filter-project-type-home-04" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Кирпично-монолитный</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filters__block">
+						<h3 class="filters__title">Удобства</h3>
+						<div class="filters__scroll" data-simplebar>
+							<div class="filters__checkboxes">
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-facilities-01">
+										<label for="filter-project-facilities-01" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Без мебели</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-facilities-03">
+										<label for="filter-project-facilities-03" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Кондиционер</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-facilities-05">
+										<label for="filter-project-facilities-05" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Паркинг</span>
+										</label>
+									</div>
+								</div>
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-facilities-02">
+										<label for="filter-project-facilities-02" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Посудомоечная машина</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-facilities-04">
+										<label for="filter-project-facilities-04" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Интернет</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-facilities-06">
+										<label for="filter-project-facilities-06" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Кладовая</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filters__block">
+						<h3 class="filters__title">Парковка</h3>
+						<div class="filters__scroll" data-simplebar>
+							<div class="filters__checkboxes">
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-parking-01">
+										<label for="filter-project-parking-01" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Крытая</span>
+										</label>
+									</div>
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-parking-03">
+										<label for="filter-project-parking-03" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Открытая</span>
+										</label>
+									</div>
+								</div>
+								<div class="filters__column">
+									<div class="square-checkbox filters__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="filter-project-parking-02">
+										<label for="filter-project-parking-02" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Неважно</span>
 										</label>
 									</div>
 								</div>
@@ -2713,8 +2130,8 @@
 					</div>
 				</div>
 				<div class="filters__bottom">
-					<a href="#" class="filters__link">Сбросить фильтр</a>
-					<a href="#" class="filters__btn btn btn--md btn--dark">Показать объекты</a>
+					<a href="#" class="filters__btn btn btn--border">Сбросить фильтр</a>
+					<a href="#" class="filters__btn btn">Показать объекты</a>
 				</div>
 			</div>
 		</div>

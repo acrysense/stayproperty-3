@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>STAYPROPERTY - Главная</title>
-	<meta property="og:title" content="STAYPROPERTY - Главная">
+	<title>STAYPROPERTY - Покупка недвижимости в Москве и МО</title>
+	<meta property="og:title" content="STAYPROPERTY - Покупка недвижимости в Москве и МО">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="STAYPROPERTY - Главная">
+	<meta property="og:site_name" content="STAYPROPERTY - Покупка недвижимости в Москве и МО">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -26,7 +26,7 @@
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
-		<header class="header header--transparent" id="header">
+		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
 					<a href="index.html" class="header__logotype">
@@ -82,59 +82,28 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- main -->
-			<section class="main" id="main">
-				<div class="main__slider">
-					<div class="swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="main__slide">
-									<div class="container">
-										<div class="main__slide-inner">
-											<h1 class="main__heading">Поможем купить недвижимость</h1>
-											<span class="main__help">на фото: ЖК Бадаевский</span>
-										</div>
-									</div>
-									<picture class="main__bg">
-										<img src="img/main-01.jpg" alt="Image">
-									</picture>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="main__slide">
-									<div class="container">
-										<div class="main__slide-inner">
-											<h1 class="main__heading">Поможем купить недвижимость 2</h1>
-											<span class="main__help">на фото: ЖК Бадаевский</span>
-										</div>
-									</div>
-									<picture class="main__bg">
-										<img src="img/main-01.jpg" alt="Image">
-									</picture>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="main__slide">
-									<div class="container">
-										<div class="main__slide-inner">
-											<h1 class="main__heading">Поможем купить недвижимость 3</h1>
-											<span class="main__help">на фото: ЖК Бадаевский</span>
-										</div>
-									</div>
-									<picture class="main__bg">
-										<img src="img/main-01.jpg" alt="Image">
-									</picture>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-pagination"></div>
-					</div>
-				</div>
-			</section>
-			<!-- end of main -->
-			<!-- projects -->
-			<section class="projects section-indent" id="projects">
+			<!-- breadcrumb -->
+			<div class="breadcrumb">
 				<div class="container">
+					<nav class="breadcrumb__nav" aria-label="Breadcrumb">
+						<ol class="breadcrumb__list">
+							<li class="breadcrumb__item">
+								<a href="index.html" class="breadcrumb__link">Главная</a>
+							</li>
+							<li class="breadcrumb__item">
+								<a href="real-estate.html" class="breadcrumb__link">Покупка недвижимости в Москве и МО</a>
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+			<!-- end of breadcrumb -->
+			<!-- projects -->
+			<section class="projects page-section" id="projects">
+				<div class="container">
+					<div class="page-top">
+						<h1 class="page-top__heading">Покупка недвижимости в Москве и МО</h1>
+					</div>
 					<div class="projects-tabs">
 						<div class="default-select projects-tabs__select">
 							<select class="js-select">
@@ -242,1150 +211,711 @@
 							</div>
 						</div>
 					</div>
+					<div class="projects__top">
+						<h4 class="projects__help">Найдено 156 объектов</h4>
+						<div class="projects__sort">
+							<span class="projects__help">Сортировать</span>
+							<div class="projects__select sort-select">
+								<select class="js-select">
+									<option value="0">по умолчанию</option>
+									<option value="1">по убыванию</option>
+									<option value="2">по возрастанию</option>
+									<option value="3">по названию</option>
+								</select>
+							</div>
+						</div>
+						<div class="projects__view">
+							<button class="projects__view-btn is--active" data-view="2">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-location-pin"></use>
+								</svg>
+								<span>на карте</span>
+							</button>
+							<button class="projects__view-btn" data-view="1">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-tiles"></use>
+								</svg>
+								<span>плиткой</span>
+							</button>
+						</div>
+					</div>
 					<div class="projects__wrap">
-						<div class="section-heading section-heading--border">
-							<h2 class="section-heading__title">Новые объекты</h2>
+						<div class="projects__holder is--active" data-view="1">
+							<div class="projects__wrapper">
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+								<article class="projects-card projects__item">
+									<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+									<a href="#" class="projects-card__img">
+										<img src="img/projects-01.jpg" alt="Image">
+										<button class="projects-card__like c-like">
+											<svg class="c-like__icon c-like__icon--default">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--filled">
+												<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+											</svg>
+										</button>
+									</a>
+									<div class="projects-card__body">
+										<p class="projects-card__description">Остоженка, ЖК Moments</p>
+										<div class="projects-card__inner">
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-size"></use>
+												</svg>
+												<span>95 м<sup>²</sup></span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+												</svg>
+												<span>2</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+												</svg>
+												<span>1</span>
+											</span>
+											<span class="projects-card__elem">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-stairs"></use>
+												</svg>
+												<span>14 из 47</span>
+											</span>
+										</div>
+										<span class="projects-card__price">12 000 000 ₽</span>
+									</div>
+								</article>
+							</div>
+							<a href="#" class="projects__more btn btn--grey">Показать ещё объекты </a>
+							<div class="pagination projects__pagination">
+								<ul class="pagination__list">
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-prev-short"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="pagination__item is--active">
+										<a href="#" class="pagination__btn">1</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">2</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">3</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn" disabled>...</a>
+									</li>
+									<li class="pagination__item is--mobile-hidden">
+										<a href="#" class="pagination__btn">12</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-next-short"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div class="projects__wrapper">
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-01.jpg" alt="Image">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+						<div class="projects__holder" data-view="2">
+							<div class="projects__maps">
+								<!-- add 'is--active' for visible -->
+								<div class="projects__maps-wrap">
+									<button class="projects__maps-close">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
 										</svg>
 									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Остоженка, ЖК Moments</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>95 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>2</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bathtub"></use>
-											</svg>
-											<span>1</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-stairs"></use>
-											</svg>
-											<span>14 из 47</span>
-										</span>
+									<span class="projects__maps-object">30 объектов</span>
+									<div class="projects__scroll" data-simplebar>
+										<div class="projects__maps-wrapper">
+											<article class="projects-card projects__item">
+												<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+												<a href="#" class="projects-card__img">
+													<img src="img/projects-01.jpg" alt="Image">
+													<button class="projects-card__like c-like">
+														<svg class="c-like__icon c-like__icon--default">
+															<use xlink:href="img/sprite.svg#icon-like"></use>
+														</svg>
+														<svg class="c-like__icon c-like__icon--filled">
+															<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+														</svg>
+													</button>
+												</a>
+												<div class="projects-card__body">
+													<p class="projects-card__description">Остоженка, ЖК Moments</p>
+													<div class="projects-card__inner">
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-size"></use>
+															</svg>
+															<span>95 м<sup>²</sup></span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+															</svg>
+															<span>2</span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+															</svg>
+															<span>1</span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-stairs"></use>
+															</svg>
+															<span>14 из 47</span>
+														</span>
+													</div>
+													<span class="projects-card__price">12 000 000 ₽</span>
+												</div>
+											</article>
+											<article class="projects-card projects__item">
+												<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
+												<a href="#" class="projects-card__img">
+													<img src="img/projects-01.jpg" alt="Image">
+													<button class="projects-card__like c-like">
+														<svg class="c-like__icon c-like__icon--default">
+															<use xlink:href="img/sprite.svg#icon-like"></use>
+														</svg>
+														<svg class="c-like__icon c-like__icon--filled">
+															<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+														</svg>
+													</button>
+												</a>
+												<div class="projects-card__body">
+													<p class="projects-card__description">Остоженка, ЖК Moments</p>
+													<div class="projects-card__inner">
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-size"></use>
+															</svg>
+															<span>95 м<sup>²</sup></span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-bedroom"></use>
+															</svg>
+															<span>2</span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-bathtub"></use>
+															</svg>
+															<span>1</span>
+														</span>
+														<span class="projects-card__elem">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-stairs"></use>
+															</svg>
+															<span>14 из 47</span>
+														</span>
+													</div>
+													<span class="projects-card__price">12 000 000 ₽</span>
+												</div>
+											</article>
+										</div>
 									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
 								</div>
-							</article>
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторный дом</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-02.jpg" alt="Image">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Рублёво-Успенское, Миллениум Парк</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>226 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-forest"></use>
-											</svg>
-											<span>7,25 сот</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>4</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-road"></use>
-											</svg>
-											<span>23 км до МКАД</span>
-										</span>
-									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
-								</div>
-							</article>
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-03.jpg" alt="Image">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Остоженка, ЖК Moments</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>95 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>2</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bathtub"></use>
-											</svg>
-											<span>1</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-stairs"></use>
-											</svg>
-											<span>14 из 47</span>
-										</span>
-									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
-								</div>
-							</article>
-						</div>
-						<div class="projects__bottom">
-							<a href="#" class="projects__btn btn btn--grey">Показать все объекты</a>
-						</div>
-					</div>
-					<div class="projects__wrap section-indent">
-						<div class="section-heading section-heading--border">
-							<h2 class="section-heading__title">Лучшие предложения</h2>
-						</div>
-						<div class="projects__wrapper">
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-01.jpg" alt="Image">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Остоженка, ЖК Moments</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>95 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>2</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bathtub"></use>
-											</svg>
-											<span>1</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-stairs"></use>
-											</svg>
-											<span>14 из 47</span>
-										</span>
-									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
-								</div>
-							</article>
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторный дом</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-02.jpg" alt="Image">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Рублёво-Успенское, Миллениум Парк</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>226 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-forest"></use>
-											</svg>
-											<span>7,25 сот</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>4</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-road"></use>
-											</svg>
-											<span>23 км до МКАД</span>
-										</span>
-									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
-								</div>
-							</article>
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-03.jpg" alt="Image">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Остоженка, ЖК Moments</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>95 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>2</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bathtub"></use>
-											</svg>
-											<span>1</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-stairs"></use>
-											</svg>
-											<span>14 из 47</span>
-										</span>
-									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
-								</div>
-							</article>
-						</div>
-						<div class="projects__bottom">
-							<a href="#" class="projects__btn btn btn--grey">Показать все объекты</a>
-						</div>
-					</div>
-					<div class="projects__wrap section-indent">
-						<div class="section-heading section-heading--border">
-							<h2 class="section-heading__title">Эксклюзивные проекты</h2>
-						</div>
-						<div class="projects__wrapper">
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-01.jpg" alt="Image">
-									<div class="projects-card__statuses">
-										<span class="projects-card__status">Эксклюзивно</span>
-									</div>
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Остоженка, ЖК Moments</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>95 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>2</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bathtub"></use>
-											</svg>
-											<span>1</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-stairs"></use>
-											</svg>
-											<span>14 из 47</span>
-										</span>
-									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
-								</div>
-							</article>
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторный дом</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-02.jpg" alt="Image">
-									<div class="projects-card__statuses">
-										<span class="projects-card__status">Эксклюзивно</span>
-										<span class="projects-card__status projects-card__status--dark">Выгодно</span>
-									</div>
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Рублёво-Успенское, Миллениум Парк</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>226 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-forest"></use>
-											</svg>
-											<span>7,25 сот</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>4</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-road"></use>
-											</svg>
-											<span>23 км до МКАД</span>
-										</span>
-									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
-								</div>
-							</article>
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-01.jpg" alt="Image">
-									<div class="projects-card__statuses">
-										<span class="projects-card__status">Эксклюзивно</span>
-									</div>
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Остоженка, ЖК Moments</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>95 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>2</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bathtub"></use>
-											</svg>
-											<span>1</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-stairs"></use>
-											</svg>
-											<span>14 из 47</span>
-										</span>
-									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
-								</div>
-							</article>
-						</div>
-						<div class="projects__bottom">
-							<a href="#" class="projects__btn btn btn--grey">Показать все объекты</a>
-						</div>
-					</div>
-					<div class="projects__wrap section-indent">
-						<div class="section-heading section-heading--border">
-							<h2 class="section-heading__title">Объекты для инвестиций</h2>
-						</div>
-						<div class="projects__wrapper">
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-01.jpg" alt="Image">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Остоженка, ЖК Moments</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>95 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>2</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bathtub"></use>
-											</svg>
-											<span>1</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-stairs"></use>
-											</svg>
-											<span>14 из 47</span>
-										</span>
-									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
-								</div>
-							</article>
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторный дом</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-01.jpg" alt="Image">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Рублёво-Успенское, Миллениум Парк</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>226 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-forest"></use>
-											</svg>
-											<span>7,25 сот</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>4</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-road"></use>
-											</svg>
-											<span>23 км до МКАД</span>
-										</span>
-									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
-								</div>
-							</article>
-							<article class="projects-card projects__item">
-								<a href="#" class="projects-card__title">Просторная квартира с качественной отделкой</a>
-								<a href="#" class="projects-card__img">
-									<img src="img/projects-01.jpg" alt="Image">
-									<button class="projects-card__like c-like">
-										<svg class="c-like__icon c-like__icon--default">
-											<use xlink:href="img/sprite.svg#icon-like"></use>
-										</svg>
-										<svg class="c-like__icon c-like__icon--filled">
-											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
-										</svg>
-									</button>
-								</a>
-								<div class="projects-card__body">
-									<p class="projects-card__description">Остоженка, ЖК Moments</p>
-									<div class="projects-card__inner">
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-size"></use>
-											</svg>
-											<span>95 м<sup>²</sup></span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bedroom"></use>
-											</svg>
-											<span>2</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-bathtub"></use>
-											</svg>
-											<span>1</span>
-										</span>
-										<span class="projects-card__elem">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-stairs"></use>
-											</svg>
-											<span>14 из 47</span>
-										</span>
-									</div>
-									<span class="projects-card__price">12 000 000 ₽</span>
-								</div>
-							</article>
-						</div>
-						<div class="projects__bottom">
-							<a href="#" class="projects__btn btn btn--grey">Показать все объекты</a>
+								<div class="projects__map" id="projects-map"></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- end of projects -->
-			<!-- realty review -->
-			<section class="realty-review section-indent" id="realty-review">
-				<div class="container">
-					<div class="section-heading section-heading--border">
-						<h2 class="section-heading__title">Видео обзоры недвижимости</h2>
-					</div>
-					<div class="realty-review__slider">
-						<div class="realty-review__slider-wrapper">
-							<div class="swiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<article class="realty-review__item">
-											<h3 class="realty-review__title">Центральный район в Москве</h3>
-											<a href="#" class="realty-review__media">
-												<img src="img/realty-review-01.jpg" alt="Image">
-											</a>
-											<p class="realty-review__description">14:27</p>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="realty-review__item">
-											<h3 class="realty-review__title">Центральный район в Москве</h3>
-											<a href="#" class="realty-review__media">
-												<img src="img/realty-review-02.jpg" alt="Image">
-											</a>
-											<p class="realty-review__description">14:27</p>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="realty-review__item">
-											<h3 class="realty-review__title">Центральный район в Москве</h3>
-											<a href="#" class="realty-review__media">
-												<img src="img/realty-review-01.jpg" alt="Image">
-											</a>
-											<p class="realty-review__description">14:27</p>
-										</article>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="realty-review__bottom">
-							<a href="#" class="realty-review__btn btn btn--grey">Показать все города</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end of realty review -->
-			<!-- cities -->
-			<section class="cities section-indent" id="cities">
-				<div class="container">
-					<div class="section-heading section-heading--border">
-						<h2 class="section-heading__title">Зарубежная недвижимость</h2>
-					</div>
-					<div class="cities__slider">
-						<div class="cities__slider-wrapper">
-							<div class="swiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<a href="#" class="cities__item" style="background-image: url(img/cities-01.jpg);">
-											<div class="cities__body">
-												<span class="cities__title">Стамбул</span>
-												<span class="cities__help">1230 вариантов</span>
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#" class="cities__item" style="background-image: url(img/cities-02.jpg);">
-											<div class="cities__body">
-												<span class="cities__title">Дубай</span>
-												<span class="cities__help">1230 вариантов</span>
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#" class="cities__item" style="background-image: url(img/cities-03.jpg);">
-											<div class="cities__body">
-												<span class="cities__title">Северный Кипр</span>
-												<span class="cities__help">1230 вариантов</span>
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#" class="cities__item" style="background-image: url(img/cities-04.jpg);">
-											<div class="cities__body">
-												<span class="cities__title">Аланья</span>
-												<span class="cities__help">1230 вариантов</span>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-pagination"></div>
-						<div class="cities__bottom">
-							<a href="#" class="cities__btn btn btn--grey">Показать все города</a>
-							<div class="swiper-controls">
-								<button class="swiper-button-prev" aria-label="Назад">
-									<svg class="swiper-button-icon">
-										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
-									</svg>
-								</button>
-								<button class="swiper-button-next" aria-label="Далее">
-									<svg class="swiper-button-icon">
-										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end of cities -->
-			<!-- services -->
-			<section class="services section-indent" id="services">
-				<div class="container">
-					<div class="section-heading section-heading--border">
-						<h2 class="section-heading__title">Наши услуги</h2>
-					</div>
-					<div class="services__slider">
-						<div class="services__slider-wrapper">
-							<div class="swiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<article class="services__item services-card">
-											<h3 class="services-card__title">Оценка недвижимости</h3>
-											<p class="services-card__description">Наша задача — сделать процесс владения максимально удобным</p>
-											<a href="services-card.html" class="services-card__link">Подробнее</a>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="services__item services-card">
-											<h3 class="services-card__title">Персональный брокер 24/7</h3>
-											<p class="services-card__description">От первого обращения до продажи брокер будет вас представлять</p>
-											<a href="services-card.html" class="services-card__link">Подробнее</a>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="services__item services-card">
-											<h3 class="services-card__title">Маркетинговые технологии</h3>
-											<p class="services-card__description">От первого обращения до продажи брокер будет вас представлять</p>
-											<a href="services-card.html" class="services-card__link">Подробнее</a>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="services__item services-card">
-											<h3 class="services-card__title">Предпродажная подготовка</h3>
-											<p class="services-card__description">Проведем аудит документов, подготовим квартиру к продаже</p>
-											<a href="services-card.html" class="services-card__link">Подробнее</a>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="services__item services-card">
-											<h3 class="services-card__title">Юридическое сопровождение</h3>
-											<p class="services-card__description">Наша команда оказывает полный спектр юридических услуг</p>
-											<a href="services-card.html" class="services-card__link">Подробнее</a>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="services__item services-card">
-											<h3 class="services-card__title">Контроль качества</h3>
-											<p class="services-card__description">Следите в online-режиме, как продаётся или сдаётся в аренду</p>
-											<a href="services-card.html" class="services-card__link">Подробнее</a>
-										</article>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-pagination"></div>
-						<div class="services__bottom">
-							<a href="services.html" class="services__btn btn btn--grey">Показать все услуги</a>
-							<div class="swiper-controls">
-								<button class="swiper-button-prev" aria-label="Назад">
-									<svg class="swiper-button-icon">
-										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
-									</svg>
-								</button>
-								<button class="swiper-button-next" aria-label="Далее">
-									<svg class="swiper-button-icon">
-										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end of services -->
-			<!-- reviews -->
-			<section class="reviews section-indent" id="reviews">
-				<div class="container">
-					<div class="section-heading section-heading--border">
-						<h2 class="section-heading__title">Отзывы</h2>
-					</div>
-					<div class="reviews__slider">
-						<div class="reviews__slider-wrapper">
-							<div class="swiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<article class="reviews-card reviews__item">
-											<div class="reviews-card__top">
-												<picture class="reviews-card__img">
-													<img src="img/reviews-01.jpg" alt="Image">
-												</picture>
-												<div class="reviews-card__group">
-													<h3 class="reviews-card__name">Екатерина Иванова</h3>
-													<div class="reviews-card__rating c-rating">
-														<div class="c-rating__list">
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="reviews-card__body">
-												<p class="reviews-card__description">Профессионалы высочайшего уровня! Я купила виллу в The Field, Damac Hills. StayProperty удалось найти для меня лучший вариант на рынке. Я получила полную и необходимую поддержку. Настоятельно рекомендую!</p>
-												<a href="#" class="reviews-card__link">Читать отзыв полностью</a>
-											</div>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="reviews-card reviews__item">
-											<div class="reviews-card__top">
-												<picture class="reviews-card__img">
-													<img src="img/reviews-01.jpg" alt="Image">
-												</picture>
-												<div class="reviews-card__group">
-													<h3 class="reviews-card__name">Екатерина Иванова</h3>
-													<div class="reviews-card__rating c-rating">
-														<div class="c-rating__list">
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="reviews-card__body">
-												<p class="reviews-card__description">Профессионалы высочайшего уровня! Я купила виллу в The Field, Damac Hills. StayProperty удалось найти для меня лучший вариант на рынке. Я получила полную и необходимую поддержку. Настоятельно рекомендую!</p>
-												<a href="#" class="reviews-card__link">Читать отзыв полностью</a>
-											</div>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="reviews-card reviews__item">
-											<div class="reviews-card__top">
-												<picture class="reviews-card__img">
-													<img src="img/reviews-01.jpg" alt="Image">
-												</picture>
-												<div class="reviews-card__group">
-													<h3 class="reviews-card__name">Екатерина Иванова</h3>
-													<div class="reviews-card__rating c-rating">
-														<div class="c-rating__list">
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="reviews-card__body">
-												<p class="reviews-card__description">Профессионалы высочайшего уровня! Я купила виллу в The Field, Damac Hills. StayProperty удалось найти для меня лучший вариант на рынке. Я получила полную и необходимую поддержку. Настоятельно рекомендую!</p>
-												<a href="#" class="reviews-card__link">Читать отзыв полностью</a>
-											</div>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="reviews-card reviews__item">
-											<div class="reviews-card__top">
-												<picture class="reviews-card__img">
-													<img src="img/reviews-01.jpg" alt="Image">
-												</picture>
-												<div class="reviews-card__group">
-													<h3 class="reviews-card__name">Екатерина Иванова</h3>
-													<div class="reviews-card__rating c-rating">
-														<div class="c-rating__list">
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="reviews-card__body">
-												<p class="reviews-card__description">Профессионалы высочайшего уровня! Я купила виллу в The Field, Damac Hills. StayProperty удалось найти для меня лучший вариант на рынке. Я получила полную и необходимую поддержку. Настоятельно рекомендую!</p>
-												<a href="#" class="reviews-card__link">Читать отзыв полностью</a>
-											</div>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="reviews-card reviews__item">
-											<div class="reviews-card__top">
-												<picture class="reviews-card__img">
-													<img src="img/reviews-01.jpg" alt="Image">
-												</picture>
-												<div class="reviews-card__group">
-													<h3 class="reviews-card__name">Екатерина Иванова</h3>
-													<div class="reviews-card__rating c-rating">
-														<div class="c-rating__list">
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-															<svg class="c-rating__item">
-																<use xlink:href="img/sprite.svg#icon-star"></use>
-															</svg>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="reviews-card__body">
-												<p class="reviews-card__description">Профессионалы высочайшего уровня! Я купила виллу в The Field, Damac Hills. StayProperty удалось найти для меня лучший вариант на рынке. Я получила полную и необходимую поддержку. Настоятельно рекомендую!</p>
-												<a href="#" class="reviews-card__link">Читать отзыв полностью</a>
-											</div>
-										</article>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-pagination"></div>
-						<div class="reviews__bottom">
-							<a href="#" class="reviews__btn btn btn--grey">Показать больше отзывов</a>
-							<div class="swiper-controls">
-								<button class="swiper-button-prev" aria-label="Назад">
-									<svg class="swiper-button-icon">
-										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
-									</svg>
-								</button>
-								<button class="swiper-button-next" aria-label="Далее">
-									<svg class="swiper-button-icon">
-										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end of reviews -->
-			<!-- news -->
-			<section class="news section-indent" id="news">
-				<div class="container">
-					<div class="section-heading section-heading--border">
-						<h2 class="section-heading__title">Новости</h2>
-					</div>
-					<div class="news__slider">
-						<div class="news__slider-wrapper">
-							<div class="swiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<article class="news-card news__item">
-											<a href="news-inner.html" class="news-card__img">
-												<img src="img/news-01.jpg" alt="Image">
-											</a>
-											<div class="news-card__body">
-												<a href="news-inner.html" class="news-card__title">Рынок будет расти</a>
-												<span class="news-card__help">12.07.23</span>
-											</div>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="news-card news__item">
-											<a href="news-inner.html" class="news-card__img">
-												<img src="img/news-01.jpg" alt="Image">
-											</a>
-											<div class="news-card__body">
-												<a href="news-inner.html" class="news-card__title">Рынок будет расти</a>
-												<span class="news-card__help">12.07.23</span>
-											</div>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="news-card news__item">
-											<a href="news-inner.html" class="news-card__img">
-												<img src="img/news-01.jpg" alt="Image">
-											</a>
-											<div class="news-card__body">
-												<a href="news-inner.html" class="news-card__title">Рынок будет расти</a>
-												<span class="news-card__help">12.07.23</span>
-											</div>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="news-card news__item">
-											<a href="news-inner.html" class="news-card__img">
-												<img src="img/news-01.jpg" alt="Image">
-											</a>
-											<div class="news-card__body">
-												<a href="news-inner.html" class="news-card__title">Рынок будет расти</a>
-												<span class="news-card__help">12.07.23</span>
-											</div>
-										</article>
-									</div>
-									<div class="swiper-slide">
-										<article class="news-card news__item">
-											<a href="news-inner.html" class="news-card__img">
-												<img src="img/news-01.jpg" alt="Image">
-											</a>
-											<div class="news-card__body">
-												<a href="news-inner.html" class="news-card__title">Рынок будет расти</a>
-												<span class="news-card__help">12.07.23</span>
-											</div>
-										</article>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-pagination"></div>
-						<div class="news__bottom">
-							<a href="news.html" class="news__btn btn btn--grey">Показать все новости</a>
-							<div class="swiper-controls">
-								<button class="swiper-button-prev" aria-label="Назад">
-									<svg class="swiper-button-icon">
-										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
-									</svg>
-								</button>
-								<button class="swiper-button-next" aria-label="Далее">
-									<svg class="swiper-button-icon">
-										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end of news -->
-			<!-- contacts -->
-			<section class="contacts section-indent" id="contacts">
-				<div class="container">
-					<div class="section-heading section-heading--border">
-						<h2 class="section-heading__title">Наши официальные представительства</h2>
-					</div>
-					<div class="contacts__wrapper">
-						<article class="contacts-card contacts__item">
-							<h3 class="contacts-card__title">Москва</h3>
-							<p class="contacts-card__description">ул. 3-я Ямского поля 9, офис 101</p>
-							<div class="contacts-card__inner">
-								<a href="tel:74993508099" class="contacts-card__link">+7-499-350-8099</a>
-								<a href="mailto:msk@staypropertymoscow.com" class="contacts-card__link">msk@staypropertymoscow.com</a>
-							</div>
-						</article>
-						<article class="contacts-card contacts__item">
-							<h3 class="contacts-card__title">Аланья</h3>
-							<p class="contacts-card__description">Oba Mah., Mesut Cad., No: 54 07400 Alanya / Antalya / Turkey</p>
-							<div class="contacts-card__inner">
-								<a href="tel:905301782916" class="contacts-card__link">+90-530-178-29-16</a>
-								<a href="mailto:office@stayproperty.com" class="contacts-card__link">office@stayproperty.com</a>
-							</div>
-						</article>
-						<article class="contacts-card contacts__item">
-							<h3 class="contacts-card__title">Дубай</h3>
-							<p class="contacts-card__description">ОАЭ, Дубай, Бизнес-Бэй, Bayswater Tower, офис 1311</p>
-							<div class="contacts-card__inner">
-								<a href="tel:971555912976" class="contacts-card__link">+97-155-591-29-76</a>
-								<a href="mailto:office@stayproperty.com" class="contacts-card__link">office@stayproperty.com</a>
-							</div>
-						</article>
-						<article class="contacts-card contacts__item">
-							<h3 class="contacts-card__title">Киев</h3>
-							<p class="contacts-card__description">ул. Михаила Драгомирова 17 Б, офис 9</p>
-							<div class="contacts-card__inner">
-								<a href="tel:380943200618" class="contacts-card__link">+380-943-20-06-18</a>
-								<a href="mailto:kyiv@staypropertyukraine.com" class="contacts-card__link">kyiv@staypropertyukraine.com</a>
-							</div>
-						</article>
-						<article class="contacts-card contacts__item">
-							<h3 class="contacts-card__title">Северный Кипр</h3>
-							<p class="contacts-card__description">Beşparmaklar Caddesi Mazlum Plaza No: 44 ofis 4 - Çatalköy</p>
-							<div class="contacts-card__inner">
-								<a href="tel:905301782916" class="contacts-card__link">+90-530-178-29-16</a>
-								<a href="mailto:office@stayproperty.com" class="contacts-card__link">office@stayproperty.com</a>
-							</div>
-						</article>
-						<article class="contacts-card contacts__item">
-							<h3 class="contacts-card__title">Астана</h3>
-							<p class="contacts-card__description">ул. Бейбитшилик, 8, офис 305</p>
-							<div class="contacts-card__inner">
-								<a href="tel:77273122706" class="contacts-card__link">+7-727-312-27-06</a>
-								<a href="mailto:office@staypropertykz.com" class="contacts-card__link">office@staypropertykz.com</a>
-							</div>
-						</article>
-						<article class="contacts-card contacts__item">
-							<h3 class="contacts-card__title">Алма-Ата</h3>
-							<p class="contacts-card__description">проспект Достык 210, 1 этаж</p>
-							<div class="contacts-card__inner">
-								<a href="tel:77273122706" class="contacts-card__link">+7-727-312-27-06</a>
-								<a href="mailto:office@staypropertykz.com" class="contacts-card__link">office@staypropertykz.com</a>
-							</div>
-						</article>
-						<article class="contacts-card contacts__item">
-							<h3 class="contacts-card__title">Стамбул</h3>
-							<p class="contacts-card__description">Mahmut bey mah., Taşocağı yolu cad. Balance Rezidance</p>
-							<div class="contacts-card__inner">
-								<a href="tel:905301782916" class="contacts-card__link">+90-530-178-29-16</a>
-								<a href="mailto:office@staypropertyistanbul.com" class="contacts-card__link">office@staypropertyistanbul.com</a>
-							</div>
-						</article>
-						<article class="contacts-card contacts__item is--disabled">
-							<h3 class="contacts-card__title">Лондон</h3>
-							<p class="contacts-card__description">Ожидайте открытия</p>
-						</article>
-					</div>
-					<a href="contacts.html" class="contacts__more btn btn--grey">Перейти в контакты</a>
-				</div>
-			</section>
-			<!-- end of contacts -->
 			<!-- feedback -->
 			<section class="feedback section-indent" id="feedback">
 				<div class="container">
@@ -3007,7 +2537,7 @@
 				styles: featureOpts
 			};
 
-			map = new google.maps.Map(document.getElementById('contacts-map'), myMapOptions);
+			map = new google.maps.Map(document.getElementById('projects-map'), myMapOptions);
 			marker = new google.maps.Marker({
 				position: new google.maps.LatLng(36.5381797, 32.0381948),
 				map: map,
